@@ -4,10 +4,10 @@ Material de apoio e documentação para o minicurso de introdução à gestão d
 
 Este projeto foi construído utilizando [Astro](https://astro.build) e o template [Starlight](https://starlight.astro.build/).
 
-## Acesso ao Material
+## 📚 Acesso ao Material
 O conteúdo completo do minicurso está disponível online em: **[Ainda não temos Links!]**
 
-## 🛠️ Como rodar localmente (Para curiosos e devs)
+## 🛠️ Como rodar localmente
 Caso queira clonar este repositório:
 
 1. Instale as dependências: `npm install`
