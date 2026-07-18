@@ -1,0 +1,98 @@
+---
+title: Ultimate Starlight Sampling
+description: "A biblioteca definitiva de componentes e marcações do Starlight para copiar e colar."
+---
+
+import { Tabs, TabItem, Card, CardGrid, Badge, Icon, LinkCard, Steps } from '@astrojs/starlight/components';
+
+Este é o seu mostruário mestre. A linha de `import` acima é o que dá superpoderes a esta página. Nunca a apague se for usar Tabs ou Cards!
+
+## 1. Formatação de Texto e Badges
+
+Além do clássico **negrito**, *itálico* e `código inline`, você pode usar marcadores coloridos para chamar atenção para status de projetos ou novidades:
+
+Status do artigo: <Badge text="Em revisão" variant="note" />
+Prioridade: <Badge text="Alta" variant="danger" />
+Módulo: <Badge text="Novo" variant="success" />
+
+> "A documentação metodológica é o que separa a ciência reprodutível do puro caos."
+
+---
+
+## 2. Caixas de Alerta (Asides)
+
+Use para destacar avisos críticos no seu material.
+
+:::note
+A base de qualquer pesquisa em epistemologia começa com a curadoria impecável das fontes.
+:::
+
+:::tip[Dica de Ouro]
+Crie coleções separadas no Zotero para dividir seus projetos práticos, como o material da Open Life Science ou suas anotações do Neuromatch.
+:::
+
+:::caution[Atenção aos Anexos]
+Sincronizar muitos PDFs pesados de neuroimagem pode estourar o limite gratuito do Zotero.
+:::
+
+:::danger[Aviso Crítico]
+Nunca apague ou mova a pasta raiz do seu banco de dados manualmente!
+:::
+
+---
+
+## 3. Abas Dinâmicas (Tabs)
+
+Agora sim, funcionando perfeitamente! Excelentes para dividir o conteúdo sem poluir a tela.
+
+<Tabs>
+  <TabItem label="Windows" icon="laptop">
+    Baixe o instalador `.exe`, clique duas vezes e siga o assistente padrão.
+  </TabItem>
+  <TabItem label="macOS" icon="apple">
+    Abra o `.dmg` e arraste o aplicativo para a sua pasta Applications.
+  </TabItem>
+  <TabItem label="Linux" icon="linux">
+    Recomendamos usar o pacote oficial ou configurar o ambiente via terminal.
+  </TabItem>
+</Tabs>
+
+---
+
+## 4. Cards e Grids
+
+A melhor forma de organizar resumos de módulos ou tópicos visuais.
+
+<CardGrid stagger>
+  <Card title="Fundamentos da Pesquisa" icon="open-book">
+    Entenda a estrutura básica de gerenciamento de metadados e referências.
+  </Card>
+  <Card title="Ambiente Local" icon="setting">
+    Configure suas ferramentas de escrita, sincronizando o MyST e seus repositórios.
+  </Card>
+</CardGrid>
+
+---
+
+## 5. Guias Passo a Passo (Steps)
+
+Um componente nativo maravilhoso para criar tutoriais sequenciais.
+
+<Steps>
+1. Faça o download do Zotero.
+2. Instale o conector no seu navegador favorito.
+3. Extraia o primeiro artigo com apenas um clique!
+</Steps>
+
+---
+
+## 6. Blocos de Código (Com destaque)
+
+Para exibir configurações ou scripts com numeração e destaque de linhas específicas.
+
+```yaml title="config.yml" showLineNumbers {3}
+# Exemplo de configuração de interface
+theme: light
+language: pt-BR # Esta linha está destacada!
+plugins: true
+

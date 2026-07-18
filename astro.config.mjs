@@ -6,14 +6,14 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'Curso CIPET II',
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/odisseuz/curso-zotero' }],
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Módulos',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Parte 1', slug: 'guides/parte_1' },
+						{ label: 'Parte 1', slug: 'modulos/parte_1' },
 					],
 				},
 				{
