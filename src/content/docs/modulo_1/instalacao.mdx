@@ -1,6 +1,98 @@
 ---
-title: Instalação & Configuração inicial
-description: Aqui, vamos juntos fazer o processo de instalação e configurações essenciais
+title: Instalação & Configuração
+description: Aqui, vamos juntos fazer o processo de instalação e configurações essenciais.
 ---
 
-teste
+import { Tabs, TabItem, Card, CardGrid, Badge, Icon, LinkCard, Steps } from '@astrojs/starlight/components';
+
+## Instalação
+
+#### Aplicativo Principal:
+
+A instalação do aplicativo vai depender do seu sistema operacional. Acesse a [página oficial de download do Zotero](https://www.zotero.org/download/) para baixar a versão compatível com a seu computador.
+
+<Tabs>
+  <TabItem label="Windows" icon="laptop">
+    Baixe o instalador `.exe`, clique duas vezes e siga o assistente padrão.
+    
+    *(lembrar de usar a propriedade `alt="descrição da imagem"` nas fotos para manter a acessibilidade!)*
+  </TabItem>
+  
+  <TabItem label="macOS" icon="apple">
+    Abra o `.dmg` e arraste o aplicativo para a sua pasta Applications. 
+    Após a instalação, você pode deletar o arquivo `.dmg`.
+    
+    *(Adicionar prints do macOS aqui - lembre-se do `alt` nas imagens)*
+  </TabItem>
+  
+  <TabItem label="Linux" icon="linux">
+    Recomendamos usar o pacote oficial ou configurar o ambiente via terminal.
+    
+    <Tabs>
+      <TabItem label="Ubuntu/Debian">
+        Execute os comandos abaixo no seu terminal para instalar via `apt`:
+        
+        *(Adicionar passo a passo e prints do Ubuntu aqui)*
+      </TabItem>
+      <TabItem label="Fedora">
+        *(adicionar outras distros aqui)*
+      </TabItem>
+    </Tabs>
+  </TabItem>
+</Tabs>
+
+#### Extensão de navegador (Zotero Connector)
+
+De forma simultânea, precisaremos da extensão de navegador instalada para o andamento do curso. Essa extensão nos ajudará a enviar artigos, páginas web, etc para o Zotero.
+
+<Tabs>
+  <TabItem label="Chrome / Edge / Brave / Firefox" icon="window">
+    Acesse [a página oficial de download](https://www.zotero.org/download/), do lado direito, ao lado do download do aplicativo, há a opção de instalar o Zotero Connector.
+  </TabItem>
+  <TabItem label="Safari" icon="apple">
+    O Zotero Connector para Safari já vem embutido no aplicativo principal do Zotero para macOS. 
+    Para ativá-lo, abra o Safari, vá em **Ajustes > Extensões** e marque a caixa do Zotero.
+  </TabItem>
+</Tabs>
+
+---
+
+## Configurações
+
+Com o aplicativo e a extensão instalados, vamos configurar o Zotero para melhor aproveitamento:
+
+### 1. Ajustando o Idioma
+
+Caso o aplicativo nao esteja no idioma desejado,
+
+<Steps>
+1. Abra o Zotero e acesse as Preferências:
+   * **No Windows/Linux:** Clique no menu `Editar` > `Configurações`.
+   * **No macOS:** Clique no menu `Zotero` > `Ajustes`.
+2. Vá até a aba **Geral** (General).
+3. Na seção de Idioma (Language), selecione **Português (Brasil)**.
+4. Clique em **OK** e reinicie o aplicativo para aplicar as mudanças.
+</Steps>
+
+*(Adicionar print do menu de idioma em cada passo)*
+---
+
+### 2. Adicionando o Estilo ABNT
+
+O Zotero já vem com vários formatos internacionais (como APA e Vancouver), mas precisamos adicionar as normas da ABNT para os nossos trabalhos.
+
+<Steps>
+1. Volte ao menu de **Preferências** e clique na aba **Citação** (Cite).
+2. Cique no link **Obter estilos adicionais...** (Get additional styles...).
+3. Vai abrir uma janela do Repositório de Estilos. Na barra de busca, digite `ABNT` ou `Associação Brasileira de Normas Técnicas`.
+4. Clique no estilo desejado  para instalá-lo automaticamente na sua lista.
+
+</Steps>
+---
+### 3. Menu exibir
+É possível aumentar o tamanho das fontes, e outras opções de layout que podem ajudar na acessibilidade da aplicação.
+(inserir imagens aqui)
+
+### 9999. Configurando o Cabeçalho (isso aqui vai ficar melhor após adicionar artigos como uma note)
+
+Ao clicar com o botão direito do mouse no menu de metadados que fica à esquerda do aplicativo, é possível alterar a 
