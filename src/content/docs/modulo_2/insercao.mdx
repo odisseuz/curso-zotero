@@ -1,0 +1,111 @@
+---
+title: Inserção de Itens no Zotero
+description: Vamos aprender a inserir material no Zotero e corrigir ou adicionar metadados.
+tableOfContents:
+  minHeadingLevel: 2
+  maxHeadingLevel: 4
+---
+
+import { Aside, Tabs, TabItem, Card, CardGrid, Badge, Icon, LinkCard, Steps } from '@astrojs/starlight/components';
+
+
+### Itens e Metadados
+
+:::note[O que é um Item?]
+Primeiramente, precisamos entender o conceito de **Item**. 
+
+No Zotero, um "Item" é a unidade básica da sua biblioteca. Ele funciona como um contêiner que guarda os metadados da sua referência e onde você pode anexar arquivos relacionados (como PDFs, links e notas de leitura).
+:::
+
+Os itens podem ser de diversos tipos, e o Zotero adapta os campos de metadados automaticamente para cada um deles. **Clique nas abas abaixo para ver como os campos mudam dependendo do tipo de arquivo:**
+
+<Tabs>
+  <TabItem label="Artigos Científicos" icon="document">
+    **Exemplos de metadados no Zotero:**
+    * Título do Artigo
+    * Autores (Sobrenome, Nome)
+    * Título da Publicação (Nome da Revista)
+    * Volume e Edição (Fascículo)
+    * Páginas
+    * DOI (Digital Object Identifier)
+  </TabItem>
+  
+  <TabItem label="Livros e Capítulos" icon="open-book">
+    **Exemplos de metadados no Zotero:**
+    * Título do Livro ou Capítulo
+    * Autor / Editor
+    * Editora
+    * Local (Cidade de publicação)
+    * Ano
+    * ISBN
+  </TabItem>
+  
+  <TabItem label="Web e Mídia" icon="laptop">
+    **Exemplos de metadados no Zotero:**
+    * Título da Página Web ou Podcast
+    * Título do Site ou Programa
+    * URL (Link de acesso)
+    * Data de Acesso (Crucial para normas ABNT)
+    * Data de Publicação original
+  </TabItem>
+  
+  <TabItem label="Outros Formatos" icon="puzzle">
+    *(Ex: Obras de arte, Mapas, Patentes, Leis)*
+    
+    **Exemplos de metadados adaptáveis:**
+    * Artista / Autoridade
+    * Instituição ou Tribunal
+    * Tipo de Obra / Número do Processo
+    * Data de criação / promulgação
+  </TabItem>
+</Tabs>
+
+---
+
+### Métodos de Inserção
+
+Nesta etapa, nosso objetivo é aprender a alimentar a biblioteca utilizando quatro abordagens diferentes. Escolha a que melhor se adapta ao seu fluxo de trabalho:
+
+<CardGrid stagger>
+  <Card title="1. Inserção Manual" icon="pencil">
+    Crie um item do zero e preencha seus metadados de forma totalmente independente e personalizada.
+  </Card>
+  <Card title="2. Varinha Mágica" icon="star">
+    Insira artigos instantaneamente utilizando identificadores únicos (PMID, DOI, ISBN, etc).
+  </Card>
+  <Card title="3. Captura Automática" icon="laptop">
+    Utilize o Zotero Connector para extrair itens e anexos em PDF direto do seu navegador.
+  </Card>
+  <Card title="4. Arrastar e Soltar" icon="document">
+    Adicione arquivos PDF que já estão salvos no seu computador direto para a biblioteca.
+  </Card>
+</CardGrid>
+
+---
+
+#### 1. Inserção Manual <Badge text="Para livros físicos" variant="caution" style={{ fontStyle: 'italic' }} />
+
+Ideal para documentos físicos, livros antigos, relatórios internos ou materiais que não possuem registros estruturados online.
+
+*(Adicione o conteúdo desta seção aqui)*
+
+
+#### 2. Varinha Mágica <Badge text="Mais rápido!" variant="tip" />
+
+Neste método, basta ter um identificador único em mãos. O sistema vasculha as bases de dados e preenche os metadados possíveis.
+
+*(Adicione o conteúdo desta seção aqui)*
+
+
+#### 3. Captura Automática <Badge text="Mais Utilizada" variant="success" />
+
+A maneira mais prática no dia a dia. Com a extensão instalada no seu navegador, você pode salvar a referência completa (e muitas vezes o PDF junto!) com apenas um clique enquanto lê o artigo.
+
+*(Adicione o conteúdo desta seção aqui)*
+
+
+#### 4. Arrastar e Soltar <Badge text="Para PDFs locais" variant="danger" />
+
+Tem artigos e teses já baixados no seu computador? Basta arrastar o arquivo PDF para dentro da sua biblioteca. O software tenta ler o documento e recuperar os metadados para montar a referência automaticamente.
+
+*(Adicione o conteúdo desta seção aqui)*

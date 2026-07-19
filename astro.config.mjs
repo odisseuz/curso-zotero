@@ -17,9 +17,13 @@ export default defineConfig({
                     ],
                 },
                 {
-                    label: 'Reference',
-                    items: [{ autogenerate: { directory: 'reference' } }],
+                    label: 'Módulo 2',
+                    items: [
+                        { label: 'Inserção de Itens no Zotero', slug: 'modulo_2/insercao'},
+                        { label: 'Gestão de Metadados', slug: 'modulo_2/gestao'},
+                    ],
                 },
+               
             ],
         }),
     ],
