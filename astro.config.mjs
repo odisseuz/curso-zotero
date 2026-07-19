@@ -12,8 +12,8 @@ export default defineConfig({
                 {
                     label: 'Módulo 1',
                     items: [
-                        // Caminho: pasta/arquivo
                         { label: 'Introdução, conceitos & planejamento', slug: 'modulo_1/introducao' },
+                        {label: 'Instalação & Configuração', slug: 'modulo_1/instalacao'},
                     ],
                 },
                 {
