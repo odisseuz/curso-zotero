@@ -1,8 +1,49 @@
 ---
 title: Integração com Editores de Texto e Referências
-description: Aqui, vamos aprender a Integrar o Zotero com os editores de texto e utiliza-lo para organizar a parte de referências de nossos trabalhos
+description: Aqui, vamos aprender a integrar o Zotero com os editores de texto e utilizá-lo para organizar a parte de referências de nossos trabalhos
 tableOfContents:
   minHeadingLevel: 2
   maxHeadingLevel: 4
 ---
-teste
+
+import { Aside, Tabs, TabItem, Card, CardGrid, Badge, Icon, LinkCard, Steps } from '@astrojs/starlight/components';
+
+## Integração e uso na Escrita
+
+O Zotero possui integração nativa com diferentes editores de texto. Ele é capaz tanto de gerenciar as citações no corpo do texto (no formato (Autor, Ano) ou numérico) quanto de gerar automaticamente a **lista de referências bibliográficas** no final do seu documento, já formatada nas normas que você escolher (ABNT, APA, Vancouver, etc.).
+
+Nesta parte do curso, recomendamos que você foque apenas no editor de texto de seu uso cotidiano. Escolha a sua ferramenta abaixo:
+
+<Tabs>
+  <TabItem label="Microsoft Word" icon="document">
+    O plugin para o Word é instalado automaticamente quando você baixa o Zotero para o seu computador. Ele cria uma aba exclusiva chamada "Zotero" no menu superior do Word.
+
+    *(Adicione o passo a passo de uso no Word aqui)*
+  </TabItem>
+  
+  <TabItem label="Google Docs" icon="laptop">
+    A integração com o Google Docs não precisa de instalação extra no computador, ela funciona através da mesma extensão de navegador (Zotero Connector) que usamos para salvar os artigos.
+
+    *(Adicione o passo a passo de uso no Google Docs aqui)*
+  </TabItem>
+  
+  <TabItem label="LibreOffice" icon="pencil">
+    Assim como o Word, o plugin do LibreOffice Writer costuma vir embutido na instalação padrão do Zotero Desktop, criando uma barra de ferramentas flutuante para as citações.
+
+    *(Adicione o passo a passo de uso no LibreOffice aqui)*
+  </TabItem>
+  
+  <TabItem label="Overleaf / LaTeX" icon="seti:tex">
+   A integração aqui funciona conectando a sua conta do Overleaf diretamente ao Zotero, ou utilizando a exportação de arquivos `.bib` (BibTeX).
+
+    *(Adicione o passo a passo de uso no Overleaf aqui)*
+  </TabItem>
+
+  <TabItem label="Obsidian / Markdown" icon="seti:markdown">
+    <Badge text="Avançado" variant="caution" /> <Badge text="Para PKM" variant="note" />
+
+    Para quem organiza anotações em Markdown, o Zotero se conecta brilhantemente a ferramentas como o Obsidian através de plugins comunitários (como o *Better BibTeX*).
+
+    *(Adicione o passo a passo de uso no Obsidian aqui)*
+  </TabItem>
+</Tabs>
