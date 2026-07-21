@@ -10,36 +10,41 @@ import { Tabs, TabItem, Card, CardGrid, Badge, Icon, LinkCard, Steps } from '@as
 #### Aplicativo Principal:
 
 A instalação do aplicativo vai depender do seu sistema operacional. Acesse a [página oficial de download do Zotero](https://www.zotero.org/download/) para baixar a versão compatível com a seu computador.
-
 <Tabs>
-  <TabItem label="Windows" icon="laptop">
-    Baixe o instalador `.exe`, clique duas vezes e siga o assistente padrão.
-    
-    *(lembrar de usar a propriedade `alt="descrição da imagem"` nas fotos para manter a acessibilidade!)*
+  <TabItem icon="laptop" label="Windows">
+    Baixe o instalador `.exe` no site oficial, clique duas vezes no arquivo baixado e siga o assistente de instalação padrão.
   </TabItem>
   
-  <TabItem label="macOS" icon="apple">
-    Abra o `.dmg` e arraste o aplicativo para a sua pasta Applications. 
-    Após a instalação, você pode deletar o arquivo `.dmg`.
+  <TabItem icon="apple" label="macOS">
+    Abra o arquivo `.dmg` baixado e arraste o ícone do Zotero para a sua pasta **Applications** (Aplicativos). 
     
-    *(Adicionar prints do macOS aqui - lembre-se do `alt` nas imagens)*
+    :::tip[Dica de Limpeza]
+    Após a instalação, você pode ejetar o instalador do seu sistema e deletar o arquivo `.dmg` para liberar espaço.
+    :::
   </TabItem>
+  <TabItem icon="linux" label="Linux (Debian/Ubuntu)">
+      #### Instalação via Flatpak
   
-  <TabItem label="Linux" icon="linux">
-    Recomendamos usar o pacote oficial ou configurar o ambiente via terminal.
-    
-    <Tabs>
-      <TabItem label="Ubuntu/Debian">
-        Execute os comandos abaixo no seu terminal para instalar via `apt`:
-        
-        *(Adicionar passo a passo e prints do Ubuntu aqui)*
-      </TabItem>
-      <TabItem label="Fedora">
-        *(adicionar outras distros aqui)*
-      </TabItem>
-    </Tabs>
-  </TabItem>
-</Tabs>
+      O pacote tradicional para Linux pode ser baixado diretamente da [página oficial do Zotero](https://www.zotero.org/download/). 
+      
+      No entanto, caso você prefira gerenciar seus aplicativos outra forma, é possível instalar a versão em **Flatpak**. Se você estiver usando Debian ou Ubuntu e ainda não tiver o Flatpak configurado, siga os passos abaixo no seu terminal:
+  
+      :::tip[Usa outra distribuição?]
+      Os comandos abaixo são para distribuições baseadas em Debian/Ubuntu. Se você usa Fedora, Arch ou outras, confira como instalar no seu sistema no [site oficial do Flatpak](https://flatpak.org/setup/) e acesse o [Flathub](https://flathub.org/pt-BR). Além disso, é interessante checar se o Zotero está disponível na loja de aplicativos da sua distro.
+      :::
+  
+      ```bash
+      # 1. Instale o suporte a Flatpak no seu sistema
+      sudo apt install flatpak
+  
+      # 2. Adicione o Flathub (o principal repositório de aplicativos Flatpak)
+      flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+      
+      # 3. Instale o Zotero
+      flatpak install flathub org.zotero.Zotero
+      ```
+    </TabItem>
+ </Tabs>
 ---
 #### Extensão de navegador (Zotero Connector)
 
@@ -59,22 +64,21 @@ De forma simultânea, precisaremos da extensão de navegador instalada para o an
 
 ## Configurações
 
-Com o aplicativo e a extensão instalados, vamos configurar o Zotero para melhor aproveitamento:
+Com o aplicativo e a extensão instalados, vamos configurar o Zotero :
 
 ### 1. Ajustando o Idioma
 
-Caso o aplicativo nao esteja no idioma desejado,
+Caso o aplicativo não esteja no idioma desejado, siga estes passos:
 
 <Steps>
 1. Abra o Zotero e acesse as Preferências:
-   * **No Windows/Linux:** Clique no menu `Editar` > `Configurações`.
-   * **No macOS:** Clique no menu `Zotero` > `Ajustes`.
+   * **No Windows/Linux:** Clique no menu `Editar`(Edit) > `Configurações`(Settings).
+   * **No macOS:** Clique no menu `Zotero` (Ao lado da maçã) > `Ajustes`(Settings).
 2. Vá até a aba **Geral** (General).
 3. Na seção de Idioma (Language), selecione **Português (Brasil)**.
 4. Clique em **OK** e reinicie o aplicativo para aplicar as mudanças.
 </Steps>
 
-*(Adicionar print do menu de idioma em cada passo)*
 ---
 
 ### 2. Adicionando o Estilo ABNT
@@ -83,16 +87,15 @@ O Zotero já vem com vários formatos internacionais (como APA e Vancouver), mas
 
 <Steps>
 1. Volte ao menu de **Preferências** e clique na aba **Citação** (Cite).
-2. Cique no link **Obter estilos adicionais...** (Get additional styles...).
+2. Clique no link **Obter estilos adicionais...** (Get additional styles...).
 3. Vai abrir uma janela do Repositório de Estilos. Na barra de busca, digite `ABNT` ou `Associação Brasileira de Normas Técnicas`.
-4. Clique no estilo desejado  para instalá-lo automaticamente na sua lista.
-
+4. Clique no estilo desejado para instalá-lo automaticamente na sua lista.
 </Steps>
+
 ---
-### 3. Menu exibir
-É possível aumentar o tamanho das fontes, e outras opções de layout que podem ajudar na acessibilidade da aplicação.
-(inserir imagens aqui)
 
-### 9999. Configurando o Cabeçalho (isso aqui vai ficar melhor após adicionar artigos como uma note)
+### 3. Acessibilidade: Menu Exibir
 
-Ao clicar com o botão direito do mouse no menu de metadados que fica à esquerda do aplicativo, é possível alterar a
+:::tip[Conforto Visual]
+No menu superior **Exibir** (View), é possível aumentar o tamanho das fontes e alterar outras opções de layout da interface. Explore essas configurações para deixar a leitura mais confortável e acessível durante a sua pesquisa!
+:::
