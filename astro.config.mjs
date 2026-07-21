@@ -31,7 +31,7 @@ export default defineConfig({
           label: "Módulo 2",
           items: [
             { label: "Inserção de Itens no Zotero", slug: "modulo_2/insercao" },
-            { label: "Gestão de Metadados", slug: "modulo_2/gestao" },
+            { label: "Gestão de Metadados, Etiquetas & Organização", slug: "modulo_2/gestao" },
           ],
         },
         {
