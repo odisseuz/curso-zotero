@@ -9,6 +9,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Curso CIPET II",
+      favicon: "/favicon.svg",
       social: [
         {
           icon: "github",
