@@ -44,6 +44,15 @@ export default defineConfig({
             },
           ],
         },
+        {
+          label: "Extra",
+          items: [
+            {
+              label: "Módulo extra",
+              slug: "extra/extra_1",
+            },
+          ],
+        },
       ],
     }),
   ],
