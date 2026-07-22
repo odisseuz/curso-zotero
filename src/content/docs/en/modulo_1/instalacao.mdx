@@ -1,0 +1,101 @@
+---
+title: Instalação & Configuração
+description: Aqui, vamos juntos fazer o processo de instalação e configurações essenciais.
+---
+
+import { Tabs, TabItem, Card, CardGrid, Badge, Icon, LinkCard, Steps } from '@astrojs/starlight/components';
+
+## Instalação
+
+#### Aplicativo Principal:
+
+A instalação do aplicativo vai depender do seu sistema operacional. Acesse a [página oficial de download do Zotero](https://www.zotero.org/download/) para baixar a versão compatível com a seu computador.
+<Tabs>
+  <TabItem icon="laptop" label="Windows">
+    Baixe o instalador `.exe` no site oficial, clique duas vezes no arquivo baixado e siga o assistente de instalação padrão.
+  </TabItem>
+  
+  <TabItem icon="apple" label="macOS">
+    Abra o arquivo `.dmg` baixado e arraste o ícone do Zotero para a sua pasta **Applications** (Aplicativos). 
+    
+    :::tip[Dica de Limpeza]
+    Após a instalação, você pode ejetar o instalador do seu sistema e deletar o arquivo `.dmg` para liberar espaço.
+    :::
+  </TabItem>
+  <TabItem icon="linux" label="Linux (Debian/Ubuntu)">
+      #### Instalação via Flatpak
+  
+      O pacote tradicional para Linux pode ser baixado diretamente da [página oficial do Zotero](https://www.zotero.org/download/). 
+      
+      No entanto, caso você prefira gerenciar seus aplicativos outra forma, é possível instalar a versão em **Flatpak**. Se você estiver usando Debian ou Ubuntu e ainda não tiver o Flatpak configurado, siga os passos abaixo no seu terminal:
+  
+      :::tip[Usa outra distribuição?]
+      Os comandos abaixo são para distribuições baseadas em Debian/Ubuntu. Se você usa Fedora, Arch ou outras, confira como instalar no seu sistema no [site oficial do Flatpak](https://flatpak.org/setup/) e acesse o [Flathub](https://flathub.org/pt-BR). Além disso, é interessante checar se o Zotero está disponível na loja de aplicativos da sua distro.
+      :::
+  
+      ```bash
+      # 1. Instale o suporte a Flatpak no seu sistema
+      sudo apt install flatpak
+  
+      # 2. Adicione o Flathub (o principal repositório de aplicativos Flatpak)
+      flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+      
+      # 3. Instale o Zotero
+      flatpak install flathub org.zotero.Zotero
+      ```
+    </TabItem>
+ </Tabs>
+---
+#### Extensão de navegador (Zotero Connector)
+
+De forma simultânea, precisaremos da extensão de navegador instalada para o andamento do curso. Essa extensão nos ajudará a enviar artigos, páginas web, etc para o Zotero.
+
+<Tabs>
+  <TabItem label="Chrome / Edge / Brave / Firefox" icon="window">
+    Acesse [a página oficial de download](https://www.zotero.org/download/), do lado direito, ao lado do download do aplicativo, há a opção de instalar o Zotero Connector.
+  </TabItem>
+  <TabItem label="Safari" icon="apple">
+    O Zotero Connector para Safari já vem embutido no aplicativo principal do Zotero para macOS. 
+    Para ativá-lo, abra o Safari, vá em **Ajustes > Extensões** e marque a caixa do Zotero.
+  </TabItem>
+</Tabs>
+
+---
+
+## Configurações
+
+Com o aplicativo e a extensão instalados, vamos configurar o Zotero :
+
+### 1. Ajustando o Idioma
+
+Caso o aplicativo não esteja no idioma desejado, siga estes passos:
+
+<Steps>
+1. Abra o Zotero e acesse as Preferências:
+   * **No Windows/Linux:** Clique no menu `Editar`(Edit) > `Configurações`(Settings).
+   * **No macOS:** Clique no menu `Zotero` (Ao lado da maçã) > `Ajustes`(Settings).
+2. Vá até a aba **Geral** (General).
+3. Na seção de Idioma (Language), selecione **Português (Brasil)**.
+4. Clique em **OK** e reinicie o aplicativo para aplicar as mudanças.
+</Steps>
+
+---
+
+### 2. Adicionando o Estilo ABNT
+
+O Zotero já vem com vários formatos internacionais (como APA e Vancouver), mas precisamos adicionar as normas da ABNT para os nossos trabalhos.
+
+<Steps>
+1. Volte ao menu de **Preferências** e clique na aba **Citação** (Cite).
+2. Clique no link **Obter estilos adicionais...** (Get additional styles...).
+3. Vai abrir uma janela do Repositório de Estilos. Na barra de busca, digite `ABNT` ou `Associação Brasileira de Normas Técnicas`.
+4. Clique no estilo desejado para instalá-lo automaticamente na sua lista.
+</Steps>
+
+---
+
+### 3. Acessibilidade: Menu Exibir
+
+:::tip[Conforto Visual]
+No menu superior **Exibir** (View), é possível aumentar o tamanho das fontes e alterar outras opções de layout da interface. Explore essas configurações para deixar a leitura mais confortável e acessível durante a sua pesquisa!
+:::

@@ -1,0 +1,111 @@
+---
+title: Extra
+description: Nessa página, vamos ver coisas que infelizmente não tivemos tempo em aula
+---
+import { Badge } from '@astrojs/starlight/components';
+
+### Indo Além <Badge text="Material Extra" variant="tip" />
+
+Como o nosso tempo ao vivo é curto, criei esta seção de materiais complementares para você consultar depois. Aqui, você encontrará introduções a recursos avançados para expandir o seu conhecimento sobre o aplicativo. Fique à vontade para explorar os tópicos na ordem que preferir!
+
+<details>
+<summary>
+  <strong>Interação com PDFs e Páginas Web</strong> <Badge text="Importante" variant="danger"/>
+</summary>
+
+O Zotero possui um leitor integrado que permite realizar marcações ativas sem precisar de programas externos.
+
+**Principais recursos:**
+* **Grifos Coloridos:** Destaque o texto usando cores diferentes (ex: amarelo para conceitos-chave, vermelho para metodologia). O esquema de cores é preservado na seção de anotações, o que permite filtrar e localizar categorias específicas de informação posteriormente. (na sidebar que é possível abrir ao esquerdo no leitor de PDFs)
+* **Anotações (Post-its):** Adicione comentários e reflexões em parágrafos específicos do texto.
+* **Captura de Imagens:** A ferramenta de seleção de área permite recortar gráficos, tabelas ou figuras do PDF. A imagem é salva diretamente na sua nota.
+* **Retratos de Páginas da Web (Snapshots):** Quando você salva um site que não possui PDF, o Zotero cria uma cópia local da página. Isso garante o acesso offline ao texto original, mesmo se o site for alterado, e permite grifá-lo exatamente como faria com um documento PDF.
+
+**Extração de Fichamentos:**
+Após realizar a leitura, é possível consolidar todas as marcações em um único arquivo:
+1. Volte para a sua biblioteca e clique com o botão direito sobre o artigo lido.
+2. Selecione a opção **Adicionar Nota a partir de Anotações** (*Add Note from Annotations*).
+3. O Zotero gerará automaticamente um documento estruturado. Essa nota compila todos os seus grifos, mantendo as cores utilizadas, os comentários, as imagens capturadas e a numeração da página de cada citação.
+</details>
+
+<details>
+<summary><strong>Zotero Groups: Referências Colaborativas</strong></summary>
+
+Para utilizar os recursos colaborativos e a sincronização em nuvem, o primeiro passo é possuir uma conta vinculada ao aplicativo.
+
+**1. Criação e Configuração da Conta**
+* Crie uma conta gratuita acessando o site oficial (zotero.org/user/register).
+* No aplicativo desktop, acesse **Editar > Preferências** (no Windows/Linux) ou **Zotero > Ajustes** (no Mac).
+* Acesse a aba **Sincronização** (Sync) e insira suas credenciais. A partir desse momento, suas referências começarão a ser sincronizadas.
+
+**2. Gerenciamento de Grupos**
+O Zotero permite a criação de bibliotecas compartilhadas para organizar referências e documentos em equipe.
+* **Criação e Acesso:** A criação de novos grupos, bem como o envio e aceitação de convites, é realizada diretamente pelo painel da sua conta no site do Zotero, na aba "Groups".
+* **Tipos de Grupo:** Podem ser Privados (acessíveis apenas por convite) ou Públicos (com diferentes níveis de restrição de leitura e edição).
+* **Interface no Aplicativo:** Após ingressar em um grupo, uma nova seção chamada **Bibliotecas de Grupo** (Group Libraries) aparecerá na barra lateral esquerda do seu aplicativo, posicionada logo abaixo da sua biblioteca pessoal.
+* **Colaboração:** Membros com permissão de edição podem adicionar artigos, anexar PDFs e criar notas. Toda alteração feita dentro desta biblioteca compartilhada é atualizada automaticamente para os demais membros da equipe.
+
+</details>
+
+<details>
+<summary><strong>Zotero Mobile: Leitura no Celular ou Tablet</strong></summary>
+
+O Zotero possui aplicativos oficiais para dispositivos móveis (disponíveis para iOS e Android), permitindo o acesso à sua biblioteca e a leitura de artigos fora do ambiente desktop.
+
+**Principais Funcionalidades:**
+* **Sincronização de Biblioteca:** Ao realizar o login com a sua conta do Zotero, toda a estrutura de coleções, itens e etiquetas é espelhada no dispositivo móvel.
+* **Leitura e Anotação Integrada:** O aplicativo mobile possui um leitor de PDF nativo. Quaisquer marcações, grifos ou comentários feitos na tela do celular ou tablet são sincronizados automaticamente com o seu aplicativo desktop.
+* **Captura via Navegador Mobile:** É possível salvar novas referências diretamente do navegador do celular. Basta utilizar a função de compartilhamento nativa do sistema operacional e selecionar o aplicativo do Zotero como destino.
+
+**Gerenciamento de Armazenamento:**
+Para visualizar e grifar os PDFs no dispositivo móvel, os arquivos precisam estar sincronizados na nuvem. A conta gratuita do Zotero oferece 300 MB de armazenamento. Caso o volume de PDFs exceda esse limite, a sincronização dos arquivos anexos será interrompida. Nesses casos, é necessário adquirir um plano de expansão ou configurar um servidor alternativo, como o WebDAV.
+
+</details>
+
+<details>
+<summary><strong>Plugins da Comunidade</strong></summary>
+
+O Zotero possui código aberto, o que permite que desenvolvedores independentes criem extensões (plugins) para adicionar novas funcionalidades ao programa.
+
+**Como instalar:**
+1. Baixe o arquivo do plugin (geralmente com a extensão `.xpi`) no repositório do desenvolvedor (como o GitHub).
+2. No Zotero, acesse **Ferramentas > Extensões** (Tools > PLugins).
+3. Clique no ícone de engrenagem no canto superior direito e selecione **Install Add-on From File...** (Instalar extensão a partir de um arquivo).
+4. Selecione o arquivo `.xpi` baixado e reinicie o Zotero.
+
+**Exemplos populares:**
+* **ZotFile:** Essencial para renomear automaticamente os seus PDFs com base no autor e ano, e para extrair anotações feitas em leitores externos.
+* **Better BibTeX:** Fundamental para quem escreve usando LaTeX ou Markdown (como no Obsidian), melhorando a geração e estabilidade das chaves de citação.
+
+</details>
+
+<details>
+<summary><strong> WebDAV: Armazenamento Alternativo</strong></summary>
+
+A cota gratuita do Zotero para armazenamento de arquivos anexos (PDFs) é de apenas 300 MB. Uma excelente alternativa oficial e gratuita para expandir esse limite é configurar um servidor **WebDAV**.
+
+O WebDAV é um protocolo de transferência de arquivos suportado nativamente pelo Zotero. Na prática, isso significa que você pode conectar a sua biblioteca a serviços de nuvem alternativos para salvar seus PDFs pesados, poupando o armazenamento da sua conta principal.
+
+Existem diversas opções de armazenamento no mercado que suportam essa tecnologia. Para exemplificar a configuração, deixamos abaixo o passo a passo utilizando o **Koofr**, que é um dos serviços que suportam o WebDAV nativamente de forma gratuita e estável.
+
+<details>
+<summary><strong>Passo a passo: Configurando o Koofr no Zotero</strong></summary>
+
+**1. Gerando a senha de aplicativo (Obrigatório)**
+Por segurança, o Koofr exige uma senha exclusiva para o Zotero:
+* Acesse a sua conta do Koofr pelo navegador.
+* Vá nas **Preferências** (Preferences) > **Senha** (Password).
+* Na seção **App Passwords**, digite "Zotero" e clique em **Generate**. Copie a senha longa que aparecer.
+
+**2. Conectando no Zotero**
+* No Zotero, acesse as configurações de **Sincronização** (Sync).
+* Altere a sincronização de anexos de *Zotero* para *WebDAV*.
+* **Atenção à URL:** O Zotero já possui o `https://` em uma caixinha de seleção. No campo de texto, insira apenas o restante do endereço: `app.koofr.net/dav/Koofr`
+* Insira seu e-mail do Koofr e a **senha de aplicativo gerada** no passo anterior (não use sua senha pessoal).
+* Clique em **Verify Server**. Confirme a criação da pasta "zotero" e pronto!
+
+</details>
+
+</details>
+
+---
