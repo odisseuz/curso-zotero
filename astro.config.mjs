@@ -51,7 +51,7 @@ export default defineConfig({
         },
         {
           label: 'Extra',
-          items: ['extra/extra_1'],
+          items: ['extra/extra_1', 'extra/leituras-e-agradecimentos'],
         },
       ],
     }),

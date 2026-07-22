@@ -1,158 +1,160 @@
 ---
-title: Integração com Editores de Texto e Referências
-description: Aqui, vamos aprender a integrar o Zotero com os editores de texto e utilizá-lo para organizar a parte de referências de nossos trabalhos
+title: Integración con editores de texto y referencias
+description: Aquí aprenderemos a integrar Zotero con los editores de texto y a utilizarlo para organizar la sección de referencias de nuestros trabajos
 ---
 
 import { Aside, Tabs, TabItem, Card, CardGrid, Badge, Icon, LinkCard, Steps } from '@astrojs/starlight/components';
 
-## Integração e uso na Escrita
+## Integración y uso en la escritura
 
-O Zotero possui integração nativa com diferentes editores de texto. Ele é capaz tanto de gerenciar as citações no corpo do texto (no formato (Autor, Ano) ou numérico) quanto de gerar automaticamente a **lista de referências bibliográficas** no final do seu documento, já formatada nas normas que você escolher (ABNT, APA, Vancouver, etc.).
+Zotero cuenta con integración nativa con diferentes editores de texto. Puedes gestionar tanto las citas dentro del texto (en formato (Autor, Año) o numérico) como generar automáticamente la **lista de referencias bibliográficas** al final del documento, ya formateada según las normas que elijas (ABNT, APA, Vancouver, etc.).
 
-Nesta parte do curso, recomendamos que você foque apenas no editor de texto de seu uso cotidiano. Escolha a sua ferramenta abaixo:
+En esta parte del curso, te recomendamos que te concentres únicamente en el editor de texto que utilizas habitualmente. Elige tu herramienta a continuación:
 
 <Tabs>
   <TabItem icon="document" label="Microsoft Word">
   <Steps>
-  1. **O Zotero precisa estar aberto:** Abra o seu documento no Microsoft Word e certifique-se de que o aplicativo do Zotero está aberto em segundo plano.
-  2. **Inserindo uma citação:** Clique no local exato do seu texto onde a citação deve entrar. 
-  3. No menu superior do Word, clique na aba **Zotero** e depois no botão **Add/Edit Citation** (Adicionar/Editar Citação).
-  4. *Primeira vez no documento?* O Zotero vai abrir uma janela pedindo para você escolher o estilo de citação (ex: Associação Brasileira de Normas Técnicas - ABNT). Escolha o estilo e clique em OK.
-  5. Uma barra de pesquisa vai aparecer. Digite o nome do autor, título ou ano do artigo que você quer citar, também é possível citar mais de um autor.
-  6. Selecione o artigo correto na lista que aparecer e pressione a tecla `Enter`. Pronto! A citação vai aparecer no seu texto formatada.
-  7. **Gerando a Bibliografia:** Vá para o final do seu documento (onde ficará a lista de referências). Na aba Zotero do Word, clique no botão **Add/Edit Bibliography** (Adicionar/Editar Bibliografia). Todas as obras citadas no texto irão aparecer como uma lista de referências.
+  1. **Zotero debe estar abierto:** Abre tu documento en Microsoft Word y asegúrate de que la aplicación de Zotero esté abierta en segundo plano.
+  2. **Insertar una cita:** Haz clic en el lugar exacto del texto donde debe aparecer la cita.
+  3. En el menú superior de Word, haz clic en la pestaña **Zotero** y después en el botón **Add/Edit Citation** (Agregar/Editar cita).
+  4. *¿Es la primera vez que lo usas en el documento?* Zotero abrirá una ventana para que elijas el estilo de cita (por ejemplo: Associação Brasileira de Normas Técnicas - ABNT). Elige el estilo y haz clic en Aceptar.
+  5. Aparecerá una barra de búsqueda roja. Escribe el nombre del autor, el título o el año del artículo que deseas citar; también es posible citar a más de un autor.
+  6. Selecciona el artículo correcto en la lista que aparecerá y presiona la tecla `Enter`. ¡Listo! La cita aparecerá formateada en el texto.
+  7. **Generar la bibliografía:** Ve al final del documento (donde estará la lista de referencias). En la pestaña Zotero de Word, haz clic en el botón **Add/Edit Bibliography** (Agregar/Editar bibliografía). Todas las obras citadas en el texto aparecerán como una lista de referencias.
   </Steps>
-  
-  :::tip[Errou algo na citação?]
-  Nunca apague ou altere o texto de uma citação gerada pelo Zotero digitando por cima dela no Word! Se precisar corrigir o ano ou o nome do autor, corrija o erro lá no aplicativo do Zotero e depois clique no botão **Refresh** (Atualizar) na aba do Word. 
+
+  :::tip[¿Hay algún error en la cita?]
+  ¡Nunca borres ni modifiques el texto de una cita generada por Zotero escribiendo encima de ella en Word! Si necesitas corregir el año o el nombre del autor, corrige el error en la aplicación de Zotero y después haz clic en el botón **Refresh** (Actualizar) de la pestaña de Word.
   :::
   </TabItem>
-  
+
   <TabItem icon="laptop" label="Google Docs">
       <Steps>
-      1. **O Zotero precisa estar aberto:** Abra o seu documento no Google Docs no navegador e certifique-se de que o aplicativo do Zotero está aberto em segundo plano no seu computador.
-      2. **Menu:** Repare que, na barra de menus superior do Google Docs (junto com Arquivo, Editar, Inserir...), agora existe um menu exclusivo chamado **Zotero**.
-      3. **Inserindo uma citação:** Clique no local exato do texto onde a citação deve entrar. 
-      4. Clique no menu **Zotero** e depois em **Add/edit citation**. 
-      5. *Primeira vez?* O Google pedirá permissão para conectar o Zotero à sua conta. Escolha a sua conta do Google e clique em "Permitir". Em seguida, escolha o estilo de citação (ex: ABNT).
-      6. A barra de pesquisa vai aparecer na tela. Digite o autor ou título, selecione o artigo correto e aperte `Enter`.
-      7. **Gerando a Bibliografia:** Vá para o final do seu documento. Clique novamente no menu **Zotero** e escolha **Add/edit bibliography**. A lista de referências será construída automaticamente!
+      1. **Zotero debe estar abierto:** Abre tu documento de Google Docs en el navegador y asegúrate de que la aplicación de Zotero esté abierta en segundo plano en tu computadora.
+      2. **Menú:** Observa que, en la barra de menús superior de Google Docs (junto a Archivo, Editar, Insertar...), ahora hay un menú exclusivo llamado **Zotero**.
+      3. **Insertar una cita:** Haz clic en el lugar exacto del texto donde debe aparecer la cita.
+      4. Haz clic en el menú **Zotero** y después en **Add/edit citation**.
+      5. *¿Es la primera vez?* Google solicitará permiso para conectar Zotero con tu cuenta. Elige tu cuenta de Google y haz clic en "Permitir". A continuación, elige el estilo de cita (por ejemplo: ABNT).
+      6. La barra de búsqueda aparecerá en la pantalla. Escribe el autor o el título, selecciona el artículo correcto y presiona `Enter`.
+      7. **Generar la bibliografía:** Ve al final del documento. Haz clic nuevamente en el menú **Zotero** y elige **Add/edit bibliography**. ¡La lista de referencias se creará automáticamente!
       </Steps>
-      
-      :::caution[Atenção]
-      Como o Google Docs funciona online, o Zotero conversa com ele através da extensão do seu navegador (o *Zotero Connector*). Por depender da internet, a barra de pesquisa pode demorar um ou dois segundos a mais para aparecer do que no Word.
+
+      :::caution[Atención]
+      Como Google Docs funciona en línea, Zotero se comunica con él a través de la extensión de tu navegador (el *Zotero Connector*). Debido a que depende de Internet, la barra de búsqueda puede tardar uno o dos segundos más en aparecer que en Word.
       :::
   </TabItem>
-  
+
   <TabItem icon="pencil" label="LibreOffice">
       <Steps>
-      1. **Certifique-se que o Zotero está aberto:** Abra o seu documento no LibreOffice Writer e certifique-se de que o aplicativo do Zotero está aberto em segundo plano.
-      2. **Localize as ferramentas:** O Zotero geralmente cria uma pequena **barra de ferramentas** com ícones logo abaixo do menu principal do LibreOffice. 
-         * *Dica:* Se você não estiver vendo essa barra, vá no menu **Exibir** (View) > **Barras de ferramentas** (Toolbars) e certifique-se de que "Zotero" está marcado.
-      3. **Inserindo uma citação:** Clique no local exato do texto onde a citação deve entrar.
-      4. Clique no primeiro ícone da barra do Zotero, chamado **Add/Edit Citation** (Adicionar/Editar Citação).
-      5. *Primeira vez no documento?* Uma janela aparecerá pedindo para você escolher o estilo de formatação (ex: ABNT). Escolha e clique em OK.
-      6. A barra de pesquisa vai surgir. Digite o autor ou o título do artigo, selecione a opção correta na lista e pressione `Enter`.
-      7. **Gerando a Bibliografia:** Vá para o final do documento (onde ficará a lista de referências) e clique no terceiro ícone da barra do Zotero, chamado **Add/Edit Bibliography** (Adicionar/Editar Bibliografia). Suas referências aparecerão formatadas!
+      1. **Asegúrate de que Zotero esté abierto:** Abre tu documento en LibreOffice Writer y asegúrate de que la aplicación de Zotero esté abierta en segundo plano.
+      2. **Localiza las herramientas:** Zotero generalmente crea una pequeña **barra de herramientas** con iconos justo debajo del menú principal de LibreOffice.
+         * *Consejo:* Si no ves esta barra, ve al menú **Ver** (View) > **Barras de herramientas** (Toolbars) y asegúrate de que "Zotero" esté marcado.
+      3. **Insertar una cita:** Haz clic en el lugar exacto del texto donde debe aparecer la cita.
+      4. Haz clic en el primer icono de la barra de Zotero, llamado **Add/Edit Citation** (Agregar/Editar cita).
+      5. *¿Es la primera vez que lo usas en el documento?* Aparecerá una ventana para que elijas el estilo de formato (por ejemplo: ABNT). Elígelo y haz clic en Aceptar.
+      6. Aparecerá la barra de búsqueda. Escribe el autor o el título del artículo, selecciona la opción correcta de la lista y presiona `Enter`.
+      7. **Generar la bibliografía:** Ve al final del documento (donde estará la lista de referencias) y haz clic en el tercer icono de la barra de Zotero, llamado **Add/Edit Bibliography** (Agregar/Editar bibliografía). ¡Tus referencias aparecerán formateadas!
       </Steps>
-      
-      :::caution[Atenção aos requisitos]
-            O plugin do Zotero para o LibreOffice precisa do **Java (JRE)** instalado no seu computador para conseguir se comunicar com o documento. Vá em **Ferramentas > Opções > LibreOffice > Avançado** e certifique-se de que a opção de utilizar o Java está marcada.
+
+      :::caution[Atención a los requisitos]
+            El complemento de Zotero para LibreOffice necesita que **Java (JRE)** esté instalado en tu computadora para poder comunicarse con el documento. Ve a **Herramientas > Opciones > LibreOffice > Avanzado** y asegúrate de que la opción para utilizar Java esté marcada.
             :::
-            
-            ##### E se a barra não aparecer? (Instalação Manual)
-            Dependendo do seu sistema operacional, a integração automática pode não ocorrer. Caso a barra não apareça no LibreOffice, você pode forçar a instalação pelo próprio Zotero:
-            
+
+            ##### ¿Qué ocurre si no aparece la barra? (Instalación manual)
+            Según tu sistema operativo, es posible que la integración automática no se complete. Si la barra no aparece en LibreOffice, puedes forzar la instalación desde el propio Zotero:
+
             <Steps>
-            1. Abra o aplicativo do **Zotero**.
-            2. Vá no menu **Editar** > **Preferências** (no Mac, clique em Zotero > Settings).
-            3. Acesse a aba **Citação** e depois a sub-aba **Processadores de Texto**.
-            4. Clique no botão **Instalar (ou Reinstalar) Suplemento do LibreOffice**.
-            5. Siga os passos na tela. Se o Zotero não conseguir instalar sozinho, ele abrirá uma janela pedindo para você salvar um arquivo chamado `Zotero_LibreOffice_Integration.oxt`. Salve-o em sua pasta Downloads.
-            6. Volte ao LibreOffice Writer, vá em **Ferramentas** > **Gerenciador de Extensões...**
-            7. Clique em **Adicionar...**, selecione o arquivo baixado e confirme. Reinicie o LibreOffice!
+            1. Abre la aplicación de **Zotero**.
+            2. Ve al menú **Editar** > **Preferencias** (en Mac, haz clic en Zotero > Settings).
+            3. Abre la pestaña **Citar** y después la subpestaña **Procesadores de texto**.
+            4. Haz clic en el botón **Instalar (o reinstalar) complemento de LibreOffice**.
+            5. Sigue los pasos que aparecen en la pantalla. Si Zotero no puede realizar la instalación por sí solo, abrirá una ventana para que guardes un archivo llamado `Zotero_LibreOffice_Integration.oxt`. Guárdalo en tu carpeta Downloads.
+            6. Regresa a LibreOffice Writer y ve a **Herramientas** > **Gestor de extensiones...**
+            7. Haz clic en **Añadir...**, selecciona el archivo descargado y confirma. ¡Reinicia LibreOffice!
             </Steps>
-            
+
             <details>
-            <summary><strong>🐧 Usando NixOS ou o botão "Manual" está cinza?</strong></summary>
-            
-            Em sistemas Linux com diretórios imutáveis (como o NixOS), o Zotero não consegue injetar o plugin automaticamente, não permite salvar o arquivo e desativa o botão de instalação. Para resolver:
-            
-            1. Abra o seu terminal e rode o comando abaixo. Ele localizará o arquivo de integração no sistema e o copiará para a sua pasta Downloads:
+            <summary><strong>🐧 ¿Usas NixOS o el botón "Manual" aparece deshabilitado?</strong></summary>
+
+            En sistemas Linux con directorios inmutables (como NixOS), Zotero no puede insertar el complemento automáticamente, no permite guardar el archivo y desactiva el botón de instalación. Para solucionarlo:
+
+            1. Abre la terminal y ejecuta el siguiente comando. Este localizará el archivo de integración en el sistema y lo copiará en tu carpeta Downloads:
                ```bash
-               cp $(find $(dirname$(dirname $(readlink -f$(which zotero)))) -name "*.oxt") ~/Downloads/
+               find "$(dirname "$(dirname "$(readlink -f "$(command -v zotero)")")")" \
+                 -type f -name 'Zotero_LibreOffice_Integration.oxt' \
+                 -exec cp -- {} "$HOME/Downloads/" \;
                ```
-            2. Abra o LibreOffice Writer.
-            3. Vá em **Ferramentas** > **Gerenciador de Extensões...**
-            4. Clique em **Adicionar...**, vá até a sua pasta Downloads e selecione o arquivo recém-copiado (geralmente nomeado como `Zotero_LibreOffice_Integration.oxt`).
-            5. Confirme a instalação, reinicie o LibreOffice e a sua barra de ferramentas estará disponível!
+            2. Abre LibreOffice Writer.
+            3. Ve a **Herramientas** > **Gestor de extensiones...**
+            4. Haz clic en **Añadir...**, ve a tu carpeta Downloads y selecciona el archivo que acabas de copiar (generalmente llamado `Zotero_LibreOffice_Integration.oxt`).
+            5. Confirma la instalación, reinicia LibreOffice y ¡la barra de herramientas estará disponible!
             </details>
         </TabItem>
-  
+
   <TabItem icon="seti:tex" label="Overleaf / LaTeX">
-      Para quem escreve artigos em LaTeX, o Zotero elimina a necessidade de digitar as entradas BibTeX manualmente. A forma de integração depende de onde você escreve o seu código e do seu tipo de conta.
-      
-      ##### Overleaf (Online)
-      
-      A forma de conectar o Zotero ao Overleaf varia de acordo com o seu plano na plataforma:
-      
-      **Opção A: Contas Gratuitas (Upload Manual)**
-      Se você usa a versão gratuita do Overleaf, o recurso de integração direta fica bloqueado. O processo é feito via arquivo:
+      Para quienes escriben artículos en LaTeX, Zotero elimina la necesidad de introducir manualmente las entradas BibTeX. La forma de integración depende de dónde escribas el código y del tipo de cuenta que tengas.
+
+      ##### Overleaf (en línea)
+
+      La forma de conectar Zotero con Overleaf varía según tu plan en la plataforma:
+
+      **Opción A: Cuentas gratuitas (carga manual)**
+      Si utilizas la versión gratuita de Overleaf, la función de integración directa está bloqueada. El proceso se realiza mediante un archivo:
       <Steps>
-      1. Abra o aplicativo do **Zotero** no seu computador.
-      2. Clique com o botão direito sobre a coleção (pasta) que contém as referências e selecione **Exportar Coleção...**
-      3. No campo "Formato", escolha **BibTeX** ou **BibLaTeX** e salve o arquivo `.bib` no seu computador.
-      4. Abra o seu projeto no Overleaf, clique no ícone de **Upload** (no menu superior esquerdo) e envie o arquivo `.bib`.
-      5. No seu documento `.tex`, chame as referências com os comandos apropriados (ex: `\addbibresource{nome_do_arquivo.bib}`) e cite no texto usando `\cite{chave_do_autor}`.
+      1. Abre la aplicación de **Zotero** en tu computadora.
+      2. Haz clic con el botón derecho en la colección (carpeta) que contiene las referencias y selecciona **Exportar colección...**
+      3. En el campo "Formato", elige **BibTeX** o **BibLaTeX** y guarda el archivo `.bib` en tu computadora.
+      4. Abre tu proyecto en Overleaf, haz clic en el icono de **Upload** (en el menú superior izquierdo) y carga el archivo `.bib`.
+      5. En tu documento `.tex`, incluye las referencias con los comandos correspondientes (por ejemplo: `\addbibresource{nome_do_arquivo.bib}`) y cita en el texto mediante `\cite{chave_do_autor}`.
       </Steps>
-      
-      **Opção B: Contas Premium ou Institucionais**
-      Se você assina o Overleaf ou sua universidade fornece acesso Premium, a integração é nativa e bem intuitiva, procure a aba de integrações no menu lateral e siga as instruções.
-      
+
+      **Opción B: Cuentas Premium o institucionales**
+      Si tienes una suscripción a Overleaf o tu universidad proporciona acceso Premium, la integración es nativa y muy intuitiva. Busca la pestaña de integraciones en el menú lateral y sigue las instrucciones.
+
       ---
-      
-      ##### LaTeX Local (TeXstudio, VSCode, etc.)
-      Se você escreve e compila seus documentos LaTeX no próprio computador, o processo é idêntico ao da Conta Gratuita do Overleaf.
-      
+
+      ##### LaTeX local (TeXstudio, VSCode, etc.)
+      Si escribes y compilas tus documentos LaTeX en tu propia computadora, el proceso es idéntico al de la cuenta gratuita de Overleaf.
+
       <Steps>
-      1. No **Zotero**, exporte sua coleção no formato **BibTeX** ou **BibLaTeX**.
-      2. Salve o arquivo gerado (ex: `referencias.bib`) **dentro da exata mesma pasta** onde está o seu arquivo `.tex` principal.
-      3. No seu editor LaTeX, chame o arquivo de bibliografia e utilize o comando `\cite{chave_do_autor}` para citar.
+      1. En **Zotero**, exporta tu colección en formato **BibTeX** o **BibLaTeX**.
+      2. Guarda el archivo generado (por ejemplo: `referencias.bib`) **exactamente en la misma carpeta** donde se encuentra tu archivo `.tex` principal.
+      3. En tu editor LaTeX, incluye el archivo de bibliografía y utiliza el comando `\cite{chave_do_autor}` para citar.
       </Steps>
-      
-      :::tip[Automação com Better BibTeX]
-      Se você usa LaTeX recomendamos fortemente a instalação do plugin [Better BibTeX for Zotero](https://retorque.re/zotero-better-bibtex/). 
-      
-      Ao exportar uma coleção com esse plugin ativado, você pode marcar a caixa **Keep updated** (Manter atualizado). Dessa forma, toda vez que você adicionar ou modificar um artigo no Zotero, o seu arquivo `.bib` salvo no computador será atualizado **automaticamente**, sem precisar exportar tudo manualmente de novo!
+
+      :::tip[Automatización con Better BibTeX]
+      Si utilizas LaTeX, te recomendamos encarecidamente instalar el complemento [Better BibTeX for Zotero](https://retorque.re/zotero-better-bibtex/).
+
+      Al exportar una colección con este complemento activado, puedes marcar la casilla **Keep updated** (Mantener actualizado). De esta manera, cada vez que añadas o modifiques un artículo en Zotero, el archivo `.bib` guardado en tu computadora se actualizará **automáticamente**, sin necesidad de volver a exportarlo todo de forma manual.
       :::
   </TabItem>
 
 <TabItem icon="seti:markdown" label="Obsidian / Markdown">
-    <Badge text="Comunidade" variant="note"/>
-    Como o Obsidian trabalha com arquivos de texto puro (Markdown), a integração não é nativa, mas sim feita através de **plugins desenvolvidos pela comunidade**.
+    <Badge text="Comunidad" variant="note"/>
+    Como Obsidian trabaja con archivos de texto sin formato (Markdown), la integración no es nativa, sino que se realiza mediante **complementos desarrollados por la comunidad**.
 
-    O fluxo de integração exige a configuração de duas ferramentas:
+    El flujo de integración requiere configurar dos herramientas:
 
     <Steps>
-    1. **No Zotero:** Você precisará instalar um plugin chamado [Better BibTeX for Zotero](https://retorque.re/zotero-better-bibtex/). Ele é responsável por gerar "chaves de citação" únicas para cada artigo (ex: `@silva2023`) e criar uma ponte de dados em segundo plano.
-    2. **No Obsidian:** Nas configurações, desative o "Modo Seguro" para acessar os Plugins da Comunidade.
-    3. Procure, instale e ative o plugin chamado **Zotero Integration**.
-    4. **Configuração:** Nas opções do *Zotero Integration*, você definirá um atalho de teclado para chamar o Zotero de dentro do Obsidian. 
-    5. Ao pressionar o atalho, uma barra de pesquisa aparecerá no Obsidian. Ao selecionar o artigo, o plugin extrai os dados do Zotero e cria uma nota completa no seu *Vault* contendo os metadados (autores, ano, links) e até as marcações que você fez no PDF!
+    1. **En Zotero:** Tendrás que instalar un complemento llamado [Better BibTeX for Zotero](https://retorque.re/zotero-better-bibtex/). Este se encarga de generar "claves de cita" únicas para cada artículo (por ejemplo: `@silva2023`) y de crear un puente de datos en segundo plano.
+    2. **En Obsidian:** En la configuración, desactiva el "Modo seguro" para acceder a los complementos de la comunidad.
+    3. Busca, instala y activa el complemento llamado **Zotero Integration**.
+    4. **Configuración:** En las opciones de *Zotero Integration*, define un atajo de teclado para abrir Zotero desde Obsidian.
+    5. Al presionar el atajo, aparecerá una barra de búsqueda en Obsidian. Al seleccionar el artículo, el complemento extrae los datos de Zotero y crea una nota completa en tu *Vault* que contiene los metadatos (autores, año, enlaces) e incluso las anotaciones que hayas realizado en el PDF.
     </Steps>
 
-    :::note[Curva de Aprendizado]
-    Personalizar exatamente *como* o texto do artigo importado vai aparecer no Obsidian exige a criação de **Templates** (modelos de formatação). Como isso envolve lógicas mais avançadas, recomendamos buscar tutoriais em vídeo específicos sobre a dupla "Obsidian + Zotero Integration" para configurar os seus modelos passo a passo.
+    :::note[Curva de aprendizaje]
+    Personalizar exactamente *cómo* aparecerá en Obsidian el texto del artículo importado requiere crear **Templates** (plantillas de formato). Como esto implica una lógica más avanzada, recomendamos buscar tutoriales específicos en video sobre la combinación "Obsidian + Zotero Integration" para configurar tus plantillas paso a paso.
     :::
   </TabItem>
   <TabItem icon="notes" label="Notion">
-      <Badge text="Comunidade" variant="note"/>
-  
-      Se você utiliza o Notion para organizar sua vida acadêmica, saiba que é possível sincronizar sua biblioteca do Zotero diretamente com as suas tabelas e páginas. 
-  
-      Como o Notion é uma ferramenta em nuvem, essa ponte não é nativa, mas sim feita através de um plugin criado pela comunidade chamado **Notero**.
+      <Badge text="Comunidad" variant="note"/>
 
-      **Onde encontrar:**
-      A configuração inicial exige a criação de uma chave de API (Integração) dentro do Notion para permitir que o Zotero envie os dados. Você pode encontrar o plugin, baixar a última versão e seguir o tutorial oficial de instalação passo a passo na página do projeto: [Notero no GitHub](https://github.com/dvanoni/notero).
+      Si utilizas Notion para organizar tu vida académica, puedes sincronizar tu biblioteca de Zotero directamente con tus tablas y páginas.
+
+      Como Notion es una herramienta en la nube, este puente no es nativo, sino que se implementa mediante un complemento creado por la comunidad llamado **Notero**.
+
+      **Dónde encontrarlo:**
+      La configuración inicial requiere crear una clave de API (integración) en Notion para permitir que Zotero envíe los datos. Puedes encontrar el complemento, descargar la última versión y seguir el tutorial oficial de instalación paso a paso en la página del proyecto: [Notero en GitHub](https://github.com/dvanoni/notero).
     </TabItem>
 </Tabs>

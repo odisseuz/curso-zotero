@@ -80,7 +80,9 @@ In this section of the course, we recommend focusing only on the text editor you
             
             1. Open your terminal and run the command below. It will locate the integration file on the system and copy it to your Downloads folder:
                ```bash
-               cp $(find $(dirname$(dirname $(readlink -f$(which zotero)))) -name "*.oxt") ~/Downloads/
+               find "$(dirname "$(dirname "$(readlink -f "$(command -v zotero)")")")" \
+                 -type f -name 'Zotero_LibreOffice_Integration.oxt' \
+                 -exec cp -- {} "$HOME/Downloads/" \;
                ```
             2. Open LibreOffice Writer.
             3. Go to **Tools** > **Extension Manager...**

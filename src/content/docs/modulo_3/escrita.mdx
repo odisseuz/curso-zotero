@@ -18,7 +18,7 @@ Nesta parte do curso, recomendamos que você foque apenas no editor de texto de 
   2. **Inserindo uma citação:** Clique no local exato do seu texto onde a citação deve entrar. 
   3. No menu superior do Word, clique na aba **Zotero** e depois no botão **Add/Edit Citation** (Adicionar/Editar Citação).
   4. *Primeira vez no documento?* O Zotero vai abrir uma janela pedindo para você escolher o estilo de citação (ex: Associação Brasileira de Normas Técnicas - ABNT). Escolha o estilo e clique em OK.
-  5. Uma barra de pesquisa vermelha vai aparecer. Digite o nome do autor, título ou ano do artigo que você quer citar, também é possível citar mais de um autor.
+  5. Uma barra de pesquisa vai aparecer. Digite o nome do autor, título ou ano do artigo que você quer citar, também é possível citar mais de um autor.
   6. Selecione o artigo correto na lista que aparecer e pressione a tecla `Enter`. Pronto! A citação vai aparecer no seu texto formatada.
   7. **Gerando a Bibliografia:** Vá para o final do seu documento (onde ficará a lista de referências). Na aba Zotero do Word, clique no botão **Add/Edit Bibliography** (Adicionar/Editar Bibliografia). Todas as obras citadas no texto irão aparecer como uma lista de referências.
   </Steps>
@@ -80,7 +80,9 @@ Nesta parte do curso, recomendamos que você foque apenas no editor de texto de 
             
             1. Abra o seu terminal e rode o comando abaixo. Ele localizará o arquivo de integração no sistema e o copiará para a sua pasta Downloads:
                ```bash
-               cp $(find $(dirname$(dirname $(readlink -f$(which zotero)))) -name "*.oxt") ~/Downloads/
+               find "$(dirname "$(dirname "$(readlink -f "$(command -v zotero)")")")" \
+                 -type f -name 'Zotero_LibreOffice_Integration.oxt' \
+                 -exec cp -- {} "$HOME/Downloads/" \;
                ```
             2. Abra o LibreOffice Writer.
             3. Vá em **Ferramentas** > **Gerenciador de Extensões...**
