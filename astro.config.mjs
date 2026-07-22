@@ -6,10 +6,26 @@ import starlight from "@astrojs/starlight";
 export default defineConfig({
   site: "https://odisseuz.github.io",
   base: "/curso-zotero",
+
   integrations: [
     starlight({
       title: "Curso CIPET II",
       favicon: "/favicon.svg",
+      defaultLocale: 'root',
+      locales: {
+        root: {
+          label: 'Português',
+          lang: 'pt-BR',
+        },
+        es: {
+          label: 'Español',
+          lang: 'es-ES',
+        },
+        en: {
+          label: 'English',
+          lang: 'en-US',
+        },
+      },
       social: [
         {
           icon: "github",
@@ -19,39 +35,26 @@ export default defineConfig({
       ],
       sidebar: [
         {
-          label: "Módulo 1",
+          label: 'Módulo 1',
           items: [
-            {
-              label: "Introdução, conceitos & planejamento",
-              slug: "modulo_1/introducao",
-            },
-            { label: "Instalação & Configuração", slug: "modulo_1/instalacao" },
+            { label: 'Introdução, conceitos & planejamento', slug: 'modulo_1/introducao' },
+            { label: 'Instalação & Configuração', slug: 'modulo_1/instalacao' },
           ],
         },
         {
-          label: "Módulo 2",
+          label: 'Módulo 2',
           items: [
-            { label: "Inserção de Itens no Zotero", slug: "modulo_2/insercao" },
-            { label: "Gestão de Metadados, Etiquetas & Organização", slug: "modulo_2/gestao" },
+            { label: 'Inserção de Itens no Zotero', slug: 'modulo_2/insercao' },
+            { label: 'Gestão de Metadados, Etiquetas & Organização', slug: 'modulo_2/gestao' },
           ],
         },
         {
-          label: "Módulo 3",
-          items: [
-            {
-              label: "Integração com Editores de Texto e Referências",
-              slug: "modulo_3/escrita",
-            },
-          ],
+          label: 'Módulo 3',
+          items: [{ label: 'Integração com Editores de Texto e Referências', slug: 'modulo_3/escrita' }],
         },
         {
-          label: "Extra",
-          items: [
-            {
-              label: "Módulo extra",
-              slug: "extra/extra_1",
-            },
-          ],
+          label: 'Extra',
+          items: [{ label: 'Módulo extra', slug: 'extra/extra_1' }],
         },
       ],
     }),

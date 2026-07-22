@@ -1,0 +1,168 @@
+---
+title: Inserção de Itens no Zotero
+description: Vamos aprender a inserir material no Zotero e corrigir ou adicionar metadados.
+tableOfContents:
+  minHeadingLevel: 2
+  maxHeadingLevel: 4
+---
+
+import { Aside, Tabs, TabItem, Card, CardGrid, Badge, Icon, LinkCard, Steps } from '@astrojs/starlight/components';
+
+
+### Itens e Metadados
+
+:::note[O que é um Item?]
+Primeiramente, precisamos entender o conceito de **Item**. 
+
+No Zotero, um "Item" é a unidade básica da sua biblioteca. Ele funciona como um contêiner que guarda os metadados da sua referência e onde você pode anexar arquivos relacionados (como PDFs, links e notas de leitura).
+:::
+
+Os itens podem ser de diversos tipos, e o Zotero adapta os campos de metadados automaticamente para cada um deles. **Clique nas abas abaixo para ver como os campos mudam dependendo do tipo de arquivo:**
+
+<Tabs>
+  <TabItem label="Artigos Científicos" icon="document">
+    **Exemplos de metadados no Zotero:**
+    * Título do Artigo
+    * Autores (Sobrenome, Nome)
+    * Título da Publicação (Nome da Revista)
+    * Volume e Edição (Fascículo)
+    * Páginas
+    * DOI (Digital Object Identifier)
+  </TabItem>
+  
+  <TabItem label="Livros e Capítulos" icon="open-book">
+    **Exemplos de metadados no Zotero:**
+    * Título do Livro ou Capítulo
+    * Autor / Editor
+    * Editora
+    * Local (Cidade de publicação)
+    * Ano
+    * ISBN
+  </TabItem>
+  
+  <TabItem label="Web e Mídia" icon="laptop">
+    **Exemplos de metadados no Zotero:**
+    * Título da Página Web ou Podcast
+    * Título do Site ou Programa
+    * URL (Link de acesso)
+    * Data de Acesso (Crucial para normas ABNT)
+    * Data de Publicação original
+  </TabItem>
+  
+  <TabItem label="Outros Formatos" icon="puzzle">
+    *(Ex: Obras de arte, Mapas, Patentes, Leis)*
+    
+    **Exemplos de metadados adaptáveis:**
+    * Artista / Autoridade
+    * Instituição ou Tribunal
+    * Tipo de Obra / Número do Processo
+    * Data de criação / promulgação
+  </TabItem>
+</Tabs>
+
+---
+
+### Métodos de Inserção
+
+Nesta etapa, nosso objetivo é aprender a alimentar a biblioteca utilizando quatro abordagens diferentes. Escolha a que melhor se adapta ao seu fluxo de trabalho:
+
+<CardGrid stagger>
+  <Card title="1. Inserção Manual" icon="pencil">
+    Crie um item do zero e preencha seus metadados de forma totalmente independente e personalizada.
+  </Card>
+  <Card title="2. Varinha Mágica" icon="star">
+    Insira artigos instantaneamente utilizando identificadores únicos (PMID, DOI, ISBN, etc).
+  </Card>
+  <Card title="3. Captura Automática" icon="laptop">
+    Utilize o Zotero Connector para extrair itens e anexos em PDF direto do seu navegador.
+  </Card>
+  <Card title="4. Arrastar e Soltar" icon="document">
+    Adicione arquivos PDF que já estão salvos no seu computador direto para a biblioteca.
+  </Card>
+</CardGrid>
+
+---
+#### 1. Inserção Manual <Badge text="Para livros físicos & outros tipos de material" variant="caution" style={{ fontStyle: 'italic' }} />
+
+Ideal para documentos físicos, livros antigos, relatórios internos ou materiais que não possuem registros estruturados online.
+
+<Steps>
+1. Na barra superior do Zotero, clique no ícone de **Novo Item** (ele se parece com um documento atrás de um círculo com um sinal de mais `+` no meio).
+2. Um menu suspenso vai aparecer. Selecione o **tipo de material** que você tem em mãos (ex: Livro, Documento, Artigo de Revista). 
+   Dica: Se não encontrar o tipo exato logo de cara, passe o mouse sobre a opção "Mais" no final da lista para ver todas as categorias disponíveis.
+3. Assim que você selecionar o formato, um item vazio vai ser criado na coluna do meio da sua biblioteca.
+4. Na coluna da direita (Painel de Metadados), clique nos campos em branco (como Título, Autor, Data, Editora) e digite as informações do seu material manualmente.
+</Steps>
+
+
+#### 2. Varinha Mágica <Badge text="Mais rápido!" variant="tip" />
+
+Neste método, basta ter um identificador único em mãos. O sistema vasculha as bases de dados e preenche os metadados possíveis automaticamente.
+
+<Steps>
+1. Na barra superior do Zotero (logo ao lado do botão verde de Novo Item), clique no ícone de **Adicionar Item(ns) por Identificador**. Ele tem exatamente o formato de uma **varinha mágica**.
+2. Uma pequena barra de pesquisa vai aparecer ali mesmo na barra superior.
+3. Digite ou cole o código identificador do seu documento. Os mais úteis para o nosso fluxo de pesquisa são:
+   * **DOI:** *Digital Object Indentifier* ou *Objeto de Indentificação Digital.
+   * **ISBN:** O código de registro de livros. 
+   * **PMID:** O número de identificação de artigos na base PubMed.
+4. Pressione a tecla `Enter` (ou `Return`) no seu teclado. O Zotero vai processar a busca nas bases globais e catalogar as informações possíveis. 
+</Steps>
+
+
+#### 3. Captura Automática <Badge text="Mais Utilizada" variant="success" />
+
+A maneira mais prática no dia a dia. Com a extensão instalada no seu navegador, você pode salvar a referência completa (e muitas vezes o PDF junto!) com apenas um clique enquanto lê o artigo. Além de artigos, consegue capturar outras referencias online, como vídeos do youtube, websites, etc.
+
+<Steps>
+1. **Deixe o aplicativo aberto:** O aplicativo principal (Zotero) precisa estar aberto e rodando no seu computador em segundo plano para funcionar.
+2. No seu navegador, acesse a página do material que você quer referenciar (pode ser um artigo na SciELO, um vídeo no youtube ou até uma reportagem).
+3. Localize o ícone do **Zotero Connector** na barra de extensões (geralmente no canto superior direito do seu navegador), ou no caso do safari, do lado esquerdo da barra de links. 
+4. **Observe a mudança de ícone:** A extensão altera seu ícone dependendo do que detecta na tela. O ícone pode aparecer como uma folha pautada (artigo), um livro azul, um jornal ou uma página web comum. Se houver vários artigos na mesma página, ele vira uma pasta amarela.
+5. Clique no ícone. Uma pequena notificação aparecerá no canto da tela confirmando que os metadados (e o PDF original, quando disponível em acesso aberto) estão sendo salvos na sua biblioteca.
+6. Na notificação, ou de uma janela pop-up, como no caso de uma página com vários artigos (como uma busca do PubMed), você pode alterar a localização de destino do arquivo ou selecionar quais artigos você gostaria de salvar (em páginas de buscas).
+</Steps>
+
+:::tip[Para onde foi a minha referência?]
+O Zotero sempre envia a nova captura diretamente para a pasta (Coleção) que estiver selecionada lá no seu aplicativo principal. Crie o hábito de clicar na pasta específica do seu projeto atual antes de começar as suas buscas na internet!
+:::
+
+#### 4. Arrastar e Soltar <Badge text="Para PDFs locais" variant="danger" />
+
+Tem artigos e teses já baixados no seu computador? Basta arrastar o arquivo PDF para dentro da sua biblioteca. O software tenta ler o documento e recuperar os metadados para montar a referência automaticamente.
+
+<Steps>
+1. Deixe o Zotero aberto e localize a pasta no seu computador onde o arquivo PDF está salvo.
+2. Clique no arquivo, segure e arraste-o diretamente para a coluna do meio do Zotero (sua lista de referências).
+3. Solte o botão do mouse. O Zotero vai importar o arquivo e iniciar um processo rápido de "recuperação de metadados".
+4. Se o reconhecimento for bem-sucedido, o PDF vai se transformar em um "Item" completo (com o ícone de artigo ou livro) e os campos serão preenchidos. O arquivo original ficará guardado como um anexo dentro desse item.
+</Steps>
+
+:::note[O que o Zotero lê dentro do PDF?]
+É importante entender que PDFs científicos não são apenas texto visual. Quando uma editora publica um artigo moderno, ela embute **metadados ocultos** (como Título, Autor e DOI) no próprio código do arquivo. 
+
+O Zotero varre o documento buscando esses metadados invisíveis ou tentando ler um DOI impresso na primeira página para consultar suas bases online.
+
+**E se falhar?**
+Se o seu PDF for um livro antigo escaneado, uma tese sem metadados embutidos, ou um documento mal formatado, o Zotero não conseguirá encontrar esses dados. O arquivo continuará na sua biblioteca apenas como um anexo solto. Nesses casos, você precisará clicar com o botão direito nele, selecionar **"Criar Item Pai"** (Create Parent Item), digitar um identificador ou digitar os dados manualmente.
+:::
+
+#### 5. Importação em Lote <Badge text="Extra" variant="tip" />
+
+Caso você estiver fazendo uma Revisão Sistemática ou migrando de outro gerenciador (como Mendeley ou EndNote), não precisará inserir os itens um a um. 
+
+Bases de dados científicas (como PubMed, Scopus e Web of Science) permitem que você exporte dezenas ou centenas de resultados de pesquisa em um único arquivo de texto (geralmente nos formatos `.ris`, `.bib` ou `.bibtex`).
+
+<Steps>
+1. Faça a sua pesquisa na base de dados (ex: PubMed) e procure pelo botão de **Export** ou **Citation**.
+2. Escolha salvar o arquivo no formato **RIS** ou **BibTeX** no seu computador.
+3. Com o Zotero aberto, clique no menu superior **Arquivo** (File) > **Importar...** (Import...).
+4. Selecione a opção "Um arquivo" e localize o documento que você baixou.
+5. O Zotero vai criar uma nova pasta na sua biblioteca e importar todas as dezenas de referências de uma vez só, já com os metadados organizados!
+</Steps>
+
+:::note[Exportação]
+Assim como você pode importar arquivos de outros gerenciadores, se um dia você precisar fazer um backup manual ou enviar todas as suas referências para um colega, basta ir no menu **Arquivo > Exportar Biblioteca...** (Export Library...). 
+
+Você poderá escolher o formato de saída (como RIS ou BibTeX) e o Zotero criará um arquivo contendo toda a sua coleção para ser lido em qualquer outro software.
+:::
