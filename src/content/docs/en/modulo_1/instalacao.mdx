@@ -1,101 +1,101 @@
 ---
-title: Instalação & Configuração
-description: Aqui, vamos juntos fazer o processo de instalação e configurações essenciais.
+title: Installation & Configuration
+description: Here, we will walk through the installation process and essential configurations together.
 ---
 
 import { Tabs, TabItem, Card, CardGrid, Badge, Icon, LinkCard, Steps } from '@astrojs/starlight/components';
 
-## Instalação
+## Installation
 
-#### Aplicativo Principal:
+#### Main Application:
 
-A instalação do aplicativo vai depender do seu sistema operacional. Acesse a [página oficial de download do Zotero](https://www.zotero.org/download/) para baixar a versão compatível com a seu computador.
+The installation of the application will depend on your operating system. Access the [official Zotero download page](https://www.zotero.org/download/) to download the version compatible with your computer.
 <Tabs>
   <TabItem icon="laptop" label="Windows">
-    Baixe o instalador `.exe` no site oficial, clique duas vezes no arquivo baixado e siga o assistente de instalação padrão.
+    Download the `.exe` installer from the official website, double-click the downloaded file, and follow the standard installation wizard.
   </TabItem>
   
   <TabItem icon="apple" label="macOS">
-    Abra o arquivo `.dmg` baixado e arraste o ícone do Zotero para a sua pasta **Applications** (Aplicativos). 
+    Open the downloaded `.dmg` file and drag the Zotero icon to your **Applications** folder. 
     
-    :::tip[Dica de Limpeza]
-    Após a instalação, você pode ejetar o instalador do seu sistema e deletar o arquivo `.dmg` para liberar espaço.
+    :::tip[Cleanup Tip]
+    After installation, you can eject the installer from your system and delete the `.dmg` file to free up space.
     :::
   </TabItem>
   <TabItem icon="linux" label="Linux (Debian/Ubuntu)">
-      #### Instalação via Flatpak
+      #### Installation via Flatpak
   
-      O pacote tradicional para Linux pode ser baixado diretamente da [página oficial do Zotero](https://www.zotero.org/download/). 
+      The traditional package for Linux can be downloaded directly from the [official Zotero page](https://www.zotero.org/download/). 
       
-      No entanto, caso você prefira gerenciar seus aplicativos outra forma, é possível instalar a versão em **Flatpak**. Se você estiver usando Debian ou Ubuntu e ainda não tiver o Flatpak configurado, siga os passos abaixo no seu terminal:
+      However, if you prefer to manage your applications in another way, you can install the **Flatpak** version. If you are using Debian or Ubuntu and do not have Flatpak configured yet, follow the steps below in your terminal:
   
-      :::tip[Usa outra distribuição?]
-      Os comandos abaixo são para distribuições baseadas em Debian/Ubuntu. Se você usa Fedora, Arch ou outras, confira como instalar no seu sistema no [site oficial do Flatpak](https://flatpak.org/setup/) e acesse o [Flathub](https://flathub.org/pt-BR). Além disso, é interessante checar se o Zotero está disponível na loja de aplicativos da sua distro.
+      :::tip[Using another distribution?]
+      The commands below are for Debian/Ubuntu-based distributions. If you use Fedora, Arch, or others, check how to install on your system at the [official Flatpak website](https://flatpak.org/setup/) and access [Flathub](https://flathub.org/pt-BR). Additionally, it is worth checking if Zotero is available in your distribution's app store.
       :::
   
       ```bash
-      # 1. Instale o suporte a Flatpak no seu sistema
+      # 1. Install Flatpak support on your system
       sudo apt install flatpak
   
-      # 2. Adicione o Flathub (o principal repositório de aplicativos Flatpak)
-      flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+      # 2. Add Flathub (the main Flatpak app repository)
+      flatpak remote-add --if-not-exists flathub [https://dl.flathub.org/repo/flathub.flatpakrepo](https://dl.flathub.org/repo/flathub.flatpakrepo)
       
-      # 3. Instale o Zotero
+      # 3. Install Zotero
       flatpak install flathub org.zotero.Zotero
       ```
     </TabItem>
  </Tabs>
 ---
-#### Extensão de navegador (Zotero Connector)
+#### Browser Extension (Zotero Connector)
 
-De forma simultânea, precisaremos da extensão de navegador instalada para o andamento do curso. Essa extensão nos ajudará a enviar artigos, páginas web, etc para o Zotero.
+Simultaneously, we will need the browser extension installed for the course progression. This extension will help us send articles, web pages, etc., to Zotero.
 
 <Tabs>
   <TabItem label="Chrome / Edge / Brave / Firefox" icon="window">
-    Acesse [a página oficial de download](https://www.zotero.org/download/), do lado direito, ao lado do download do aplicativo, há a opção de instalar o Zotero Connector.
+    Access [the official download page](https://www.zotero.org/download/); on the right side, next to the application download, there is the option to install the Zotero Connector.
   </TabItem>
   <TabItem label="Safari" icon="apple">
-    O Zotero Connector para Safari já vem embutido no aplicativo principal do Zotero para macOS. 
-    Para ativá-lo, abra o Safari, vá em **Ajustes > Extensões** e marque a caixa do Zotero.
+    The Zotero Connector for Safari comes built-in with the main Zotero application for macOS. 
+    To enable it, open Safari, go to **Settings > Extensions**, and check the Zotero box.
   </TabItem>
 </Tabs>
 
 ---
 
-## Configurações
+## Configuration
 
-Com o aplicativo e a extensão instalados, vamos configurar o Zotero :
+With the application and extension installed, let's configure Zotero:
 
-### 1. Ajustando o Idioma
+### 1. Adjusting the Language
 
-Caso o aplicativo não esteja no idioma desejado, siga estes passos:
+If the application is not in your desired language, follow these steps:
 
 <Steps>
-1. Abra o Zotero e acesse as Preferências:
-   * **No Windows/Linux:** Clique no menu `Editar`(Edit) > `Configurações`(Settings).
-   * **No macOS:** Clique no menu `Zotero` (Ao lado da maçã) > `Ajustes`(Settings).
-2. Vá até a aba **Geral** (General).
-3. Na seção de Idioma (Language), selecione **Português (Brasil)**.
-4. Clique em **OK** e reinicie o aplicativo para aplicar as mudanças.
+1. Open Zotero and access Preferences:
+   * **On Windows/Linux:** Click the `Edit` menu > `Settings`.
+   * **On macOS:** Click the `Zotero` menu (next to the Apple icon) > `Settings`.
+2. Go to the **General** tab.
+3. In the Language section, select **Português (Brasil)** (or your preferred language).
+4. Click **OK** and restart the application to apply the changes.
 </Steps>
 
 ---
 
-### 2. Adicionando o Estilo ABNT
+### 2. Adding the ABNT Style
 
-O Zotero já vem com vários formatos internacionais (como APA e Vancouver), mas precisamos adicionar as normas da ABNT para os nossos trabalhos.
+Zotero comes with several international formats (such as APA and Vancouver), but we need to add ABNT standards for our work.
 
 <Steps>
-1. Volte ao menu de **Preferências** e clique na aba **Citação** (Cite).
-2. Clique no link **Obter estilos adicionais...** (Get additional styles...).
-3. Vai abrir uma janela do Repositório de Estilos. Na barra de busca, digite `ABNT` ou `Associação Brasileira de Normas Técnicas`.
-4. Clique no estilo desejado para instalá-lo automaticamente na sua lista.
+1. Return to the **Preferences** menu and click the **Cite** tab.
+2. Click the link **Get additional styles...**.
+3. A Style Repository window will open. In the search bar, Search which styles you prefer.
+4. Click the desired style to automatically install it into your list.
 </Steps>
 
 ---
 
-### 3. Acessibilidade: Menu Exibir
+### 3. Accessibility: View Menu
 
-:::tip[Conforto Visual]
-No menu superior **Exibir** (View), é possível aumentar o tamanho das fontes e alterar outras opções de layout da interface. Explore essas configurações para deixar a leitura mais confortável e acessível durante a sua pesquisa!
+:::tip[Visual Comfort]
+In the top **View** menu, you can increase font size and alter other interface layout options. Explore these settings to make reading more comfortable and accessible during your research!
 :::

@@ -88,23 +88,37 @@ O WebDAV é um protocolo de transferência de arquivos suportado nativamente pel
 
 Existem diversas opções de armazenamento no mercado que suportam essa tecnologia. Para exemplificar a configuração, deixamos abaixo o passo a passo utilizando o **Koofr**, que é um dos serviços que suportam o WebDAV nativamente de forma gratuita e estável.
 
-<details>
-<summary><strong>Passo a passo: Configurando o Koofr no Zotero</strong></summary>
+<details> 
+<summary><strong>Passo a passo: Configurando o Koofr no Zotero</strong></summary> 
 
-**1. Gerando a senha de aplicativo (Obrigatório)**
-Por segurança, o Koofr exige uma senha exclusiva para o Zotero:
-* Acesse a sua conta do Koofr pelo navegador.
-* Vá nas **Preferências** (Preferences) > **Senha** (Password).
-* Na seção **App Passwords**, digite "Zotero" e clique em **Generate**. Copie a senha longa que aparecer.
+**1. Crie uma conta no Zotero** 
+Se você ainda não tem, cadastre-se para criar uma conta gratuita em [Zotero.org](https://www.zotero.org/). 
 
-**2. Conectando no Zotero**
-* No Zotero, acesse as configurações de **Sincronização** (Sync).
-* Altere a sincronização de anexos de *Zotero* para *WebDAV*.
-* **Atenção à URL:** O Zotero já possui o `https://` em uma caixinha de seleção. No campo de texto, insira apenas o restante do endereço: `app.koofr.net/dav/Koofr`
-* Insira seu e-mail do Koofr e a **senha de aplicativo gerada** no passo anterior (não use sua senha pessoal).
-* Clique em **Verify Server**. Confirme a criação da pasta "zotero" e pronto!
+**2. Crie uma conta no Koofr** 
+Em seguida, crie sua conta de armazenamento em nuvem no [Koofr](https://koofr.eu/). 
 
+**3. Gere uma Senha de Aplicativo no Koofr (Obrigatório)** 
+Por motivos de segurança, o Koofr exige uma senha de aplicativo dedicada especificamente para o Zotero: 
+* Acesse sua conta do Koofr pelo navegador. 
+* Vá em **Preferences** (Preferências) > **Password** (Senha). 
+* Role até a seção **App Passwords** (Senhas de Aplicativo). 
+* Digite `Zotero` no campo de nome e clique em **Generate** (Gerar). 
+* **Copie a senha gerada** (você precisará dela no próximo passo). 
+
+**4. Conecte o Koofr ao Zotero** 
+Agora, configure o Zotero para sincronizar seus arquivos usando seu novo armazenamento do Koofr: 
+* Abra o Zotero e vá nas configurações de **Sincronização** (Sync). 
+* Na seção *Sincronização de Arquivos*, altere a opção de **Zotero** para **WebDAV**. 
+* **Defina a URL:** O Zotero já fornece o `https://` na caixa de seleção. No campo de texto ao lado, digite exatamente: `app.koofr.net/dav/Koofr` 
+* Digite seu e-mail do Koofr. 
+* Cole a **Senha de Aplicativo** que você gerou no Passo 3 no campo de senha *(Nota: Não use sua senha padrão de login do Koofr)*. 
+* Clique em **Verify Server** (Verificar Servidor). 
+* Quando solicitado, confirme a criação da pasta `zotero`. Pronto! 
 </details>
+
+:::tip[Backup Físico em Pendrive]
+Dá para salvar tudo no pendrive também! Como já vimos como exportar, basta exportar sua biblioteca completa para o pendrive e você terá um backup físico e seguro de todas as suas referências.
+:::
 
 </details>
 

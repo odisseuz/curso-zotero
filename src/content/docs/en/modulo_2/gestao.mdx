@@ -1,77 +1,79 @@
 ---
-title: Gestão de Metadados, Etiquetas & Organização de pastas
-description: Aqui vamos aprender a inserir, corrigir e gerir metadados dos itens adicionados. Além disso, vamos organizar nossos arquivos em pastas.
+title: Metadata Management, Tags & Folder Organization
+description: Here we will learn how to insert, correct, and manage metadata for added items. In addition, we will organize our files into folders.
 ---
 
 import { Steps, Aside, Badge } from '@astrojs/starlight/components';
 
-## Gestão de Metadados 
+## Metadata Management
 
-Muitas vezes, ao adicionar artigos ou outros documentos de forma automática, alguns campos de metadados podem vir com erros de formatação, informações em branco ou até mesmo classificados com o tipo de documento errado (ex: um capítulo de livro capturado como se fosse um artigo de revista).
+Often, when adding articles or other documents automatically, some metadata fields may arrive with formatting errors, blank information, or even classified under the wrong document type (e.g., a book chapter captured as a journal article).
 
-Para garantir que suas citações e referências saiam perfeitas no futuro, precisamos fazer uma revisão e, se necessário, alterar manualmente esses campos. 
+To ensure that your citations and references turn out perfect in the future, we need to review and, if necessary, manually edit these fields.
 
-Como vimos no tópico anterior, o Zotero concentra todas essas informações no **painel da direita**. Qualquer campo nessa área pode ser editado livremente.
+As we saw in the previous topic, Zotero centralizes all of this information in the **right panel**. Any field in this area can be freely edited.
 
-Veja como é simples ajustar:
+Here is how simple it is to make adjustments:
 
 <Steps>
-1. **Selecione o item** que deseja corrigir na coluna central da sua biblioteca.
-2. Olhe para o **painel da direita** (a aba "Informações"). Lá estão todos os metadados.
-3. **Clique diretamente sobre o texto** do campo que precisa de ajuste (por exemplo, o campo "Título" ou "Data"). A caixa de texto ficará editável.
-4. Digite a informação correta e aperte `Enter` (ou clique fora da caixa) para salvar.
+1. **Select the item** you want to correct in the central column of your library.
+2. Look at the **right panel** (the "Info" tab). All the metadata is located there.
+3. **Click directly on the text** of the field that needs editing (for example, the "Title" or "Date" field). The text box will become editable.
+4. Type the correct information and press `Enter` (or click outside the box) to save.
 </Steps>
 
-<Aside type="note" title="Mudando o Tipo de Item">
-Se o documento foi importado com a categoria errada, clique no campo **Tipo de item** (o primeiríssimo da lista, lá no topo do painel direito). Um menu suspenso aparecerá para você escolher a classificação correta (Livro, Artigo de Jornal, Página Web, etc.). O Zotero ajustará os campos disponíveis automaticamente!
+<Aside type="note" title="Changing the Item Type">
+If the document was imported with the wrong category, click on the **Item Type** field (the very top item in the right panel list). A drop-down menu will appear allowing you to select the correct classification (Book, Journal Article, Web Page, etc.). Zotero will automatically adjust the available fields!
 </Aside>
 
-<Aside type="tip" title="Ajustando os Nomes dos Autores">
-Se o Zotero importar o autor de forma bagunçada ou se tratar de um autor institucional (como "Ministério da Educação" ou "Organização Mundial da Saúde"), você pode ajustar a estrutura do campo. 
+<Aside type="tip" title="Adjusting Author Names">
+If Zotero imports the author in a messy way or if it is an institutional author (such as "Ministry of Education" or "World Health Organization"), you can adjust the structure of the field.
 
-Basta clicar no **pequeno ícone branco** que fica ao lado direito da caixa de texto do autor. Ele alterna entre o formato **"Sobrenome / Nome"** (dividido em dois campos) e o formato de **"Campo Único"**
+Simply click on the **small white icon** located to the right of the author text box. It toggles between the **"Last / First"** format (divided into two fields) and the **"Single Field"** format.
 </Aside>
 
 ---
-## Etiquetas (Tags)
+## Collections and Subcollections (Folders)
 
-Enquanto as pastas (coleções) ajudam a separar seus itens por projetos ou disciplinas, as **etiquetas** são ferramentas incrivelmente flexíveis para cruzar temas e organizar o seu fluxo de trabalho de forma transversal.
+When starting to use Zotero, it is very common to save everything into the root of "My Library". However, you can create folders (which Zotero calls **Collections**) to stay organized.
 
-Você pode usar etiquetas para marcar conceitos-chave, separar metodologias, ou até mesmo definir o status de um documento (ex: <Badge text="lido" variant="success" />, <Badge text="fichar" variant="caution" />, <Badge text="urgente" variant="danger" />).
+Even if you do not have a "perfect" organization system in mind yet, starting by separating your texts by course, semester, or chapter of your paper makes a huge difference!
 
 <Steps>
-1. **Criando uma etiqueta:** Selecione um item na sua biblioteca (coluna central). No painel da direita, clique na aba **Etiquetas** (Tags), clique no botão **Add** (Adicionar) e digite o nome desejado.
-2. **O Seletor de Etiquetas:** Repare no canto inferior esquerdo da tela do Zotero. Lá existe um painel (uma nuvem de palavras) que reúne todas as etiquetas que você já usou na sua biblioteca.
-3. **Filtrando a biblioteca:** Clique em qualquer etiqueta nesse painel inferior esquerdo. O Zotero aplicará um filtro instantâneo e mostrará na coluna central apenas os itens que possuem aquela marcação. Para remover o filtro, basta clicar na etiqueta novamente.
-4. **Atribuindo Cores:** No mesmo painel do canto inferior esquerdo, clique com o botão direito sobre uma etiqueta que você considera muito importante (como um status de leitura) e selecione **Atribuir cor...** (Assign Color...).
-5. Escolha uma cor, defina um número de atalho de teclado (opcional) e clique em OK. 
+1. **Creating a Collection (Main Folder):** In the top-left corner, above "My Library", click on the icon depicting a **folder with a plus sign '+'** (New Collection). You can also right-click on "My Library" and select the same option. Give a name to your project or course.
+2. **Creating a Subcollection (Subfolder):** If your project is large, you can create folders within folders to keep everything more organized. Simply right-click on a collection you have already created and select **New Subcollection...**.
+3. **Storing your items:** To place a text inside a collection, click on the item in the middle column, hold, and drag it to the desired folder in the left column.
 </Steps>
 
-:::tip[Organização Visual]
-Quando você atribui uma cor a uma etiqueta, o Zotero passa a exibir um pequeno círculo colorido logo ao lado do título do artigo na lista principal.
+:::caution[Zotero Collections]
+Unlike regular folders on your computer, placing the same article in two different collections in Zotero **does not duplicate the PDF file** nor use up extra space on your hard drive. The software simply creates "shortcuts". That means you can place the same article in both the "Methodology" folder and the "Final Project" folder without any issues!
 
-*Nota:* O Zotero costuma importar "Etiquetas Automáticas" que vêm junto com os dados do artigo. Para evitar que o seu painel fique poluído no futuro, você pode desativar esse comportamento padrão: acesse as **Preferências** (ou Settings) do aplicativo, vá na aba **Geral** (General), desça até a seção **Diversos** (Miscellaneous) e desmarque a caixa *"Automatically tag items with keywords and subject headings"*.
-:::
-
-:::note[Bônus: Artigos Relacionados]
-No mesmo painel à direita, logo ao lado de "Etiquetas", você encontrará a aba **Relacionados** (Related). Ela permite criar um "link" interno entre dois ou mais materiais da sua biblioteca. É um recurso excelente para conectar, por exemplo, o capítulo de um livro a difetentes artigos científicos que replicam um mesmo experimento.
+Because of this, pay close attention when deleting an item: to remove an item only from the current folder, right-click on it and choose **Remove Item from Collection**. But beware: if you choose **Move Item to Trash**, it will be deleted from your entire library and will disappear from all collections altogether!
 :::
 
 ---
-## Coleções e Subcoleções (Pastas)
+## Tags
 
-Quando começamos a usar o Zotero, é muito comum ir salvando tudo e deixar os artigos acumulados na raiz da "Minha Biblioteca". Porém, é possível criar pastas (que o Zotero chama de **Coleções**) para se organizar.
+While folders (collections) help separate your items by projects or courses, **tags** are incredibly flexible tools for cross-referencing topics and organizing your workflow across categories.
 
-Mesmo que você ainda não tenha um sistema de organização "perfeito" em mente, começar separando seus textos por disciplinas, semestres ou capítulos do seu trabalho já faz uma diferença enorme!
+You can use tags to mark key concepts, separate methodologies, or even set the status of a document (e.g., <Badge text="read" variant="success" />, <Badge text="annotate" variant="caution" />, <Badge text="urgent" variant="danger" />).
 
 <Steps>
-1. **Criando uma Coleção (Pasta Principal):** No canto superior esquerdo, acima de "Minha Biblioteca" clique no ícone de uma **pastinha com um sinal de mais '+'** (Nova Coleção). Você também pode clicar com o botão direito sobre "Minha Biblioteca" e escolher a mesma opção. Dê um nome para o seu projeto ou disciplina.
-2. **Criando uma Subcoleção (Subpasta):** Se o seu projeto for grande, você pode criar pastas dentro de pastas para deixar tudo mais organizado. Basta clicar com o botão direito em cima de uma coleção que você já criou e selecionar **Nova Subcoleção...** (New Subcollection).
-3. **Guardando seus itens:** Para colocar um texto dentro de uma coleção, basta clicar no item na coluna do meio, segurar e arrastá-lo para a pastinha desejada na coluna da esquerda.
+1. **Creating a tag:** Select an item in your library (central column). In the right panel, scroll down to the **Tags** tab, click the **Add** button, and type the desired name.
+2. **The Tag Selector:** Look at the bottom-left corner of the Zotero screen. There is a panel (a tag cloud) that gathers all the tags you have used in your library.
+3. **Filtering the library:** Click on any tag in this bottom-left panel. Zotero will apply an instant filter and display only the items in the central column that contain that tag. To remove the filter, simply click on the tag again.
+4. **Assigning Colors:** In the same bottom-left panel, right-click on a tag you consider very important (such as a reading status) and select **Assign Color...**.
+5. Choose a color, set a keyboard shortcut number (optional), and click OK.
 </Steps>
 
-:::caution[Coleções do Zotero]
-Diferente das pastas normais do seu computador, colocar um mesmo artigo em duas coleções diferentes no Zotero **não duplica o arquivo PDF** nem gasta mais espaço no seu HD. O software apenas cria "atalhos". Ou seja, você pode jogar o mesmo artigo na pasta de "Metodologia" e na pasta do "Projeto Final" sem problemas! 
+:::tip[Visual Organization]
+When you assign a color to a tag, Zotero displays a small colored circle right next to the article title in the main list.
 
-Por causa disso, preste atenção na hora de apagar um item: para tirar um item apenas da pasta atual, clique com o botão direito sobre ele e escolha **Remover Item da Coleção**. Mas cuidado: se você escolher **Mover Item para a Lixeira**, ele será apagado da sua biblioteca inteira e sumirá de todas as coleções junto!
+*Note:* Zotero usually imports "Automatic Tags" that come along with the article data. To prevent your panel from becoming cluttered in the future, you can disable this default behavior: open the application **Preferences** (or Settings), go to the **General** tab, scroll down to the **Miscellaneous** section, and uncheck the box *"Automatically tag items with keywords and subject headings"*.
 :::
+
+:::note[Bonus: Related Items]
+In the same right-hand panel, right next to "Tags", you will find the **Related** tab. It allows you to create an internal "link" between two or more materials in your library. This is an excellent feature for connecting, for example, a book chapter to different scientific articles that replicate the same experiment.
+:::
+
+---

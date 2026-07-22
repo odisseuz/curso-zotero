@@ -1,6 +1,6 @@
 ---
-title: Inserção de Itens no Zotero
-description: Vamos aprender a inserir material no Zotero e corrigir ou adicionar metadados.
+title: Inserting Items into Zotero
+description: Let's learn how to insert materials into Zotero and correct or add metadata.
 tableOfContents:
   minHeadingLevel: 2
   maxHeadingLevel: 4
@@ -9,160 +9,160 @@ tableOfContents:
 import { Aside, Tabs, TabItem, Card, CardGrid, Badge, Icon, LinkCard, Steps } from '@astrojs/starlight/components';
 
 
-### Itens e Metadados
+### Items and Metadata
 
-:::note[O que é um Item?]
-Primeiramente, precisamos entender o conceito de **Item**. 
+:::note[What is an Item?]
+Firstly, we need to understand the concept of an **Item**. 
 
-No Zotero, um "Item" é a unidade básica da sua biblioteca. Ele funciona como um contêiner que guarda os metadados da sua referência e onde você pode anexar arquivos relacionados (como PDFs, links e notas de leitura).
+In Zotero, an "Item" is the basic unit of your library. It functions as a container that stores the metadata of your reference and where you can attach related files (such as PDFs, links, and reading notes).
 :::
 
-Os itens podem ser de diversos tipos, e o Zotero adapta os campos de metadados automaticamente para cada um deles. **Clique nas abas abaixo para ver como os campos mudam dependendo do tipo de arquivo:**
+Items can be of various types, and Zotero adapts the metadata fields automatically for each of them. **Click on the tabs below to see how the fields change depending on the file type:**
 
 <Tabs>
-  <TabItem label="Artigos Científicos" icon="document">
-    **Exemplos de metadados no Zotero:**
-    * Título do Artigo
-    * Autores (Sobrenome, Nome)
-    * Título da Publicação (Nome da Revista)
-    * Volume e Edição (Fascículo)
-    * Páginas
+  <TabItem label="Scientific Articles" icon="document">
+    **Examples of metadata in Zotero:**
+    * Article Title
+    * Authors (Last Name, First Name)
+    * Publication Title (Journal Name)
+    * Volume and Issue
+    * Pages
     * DOI (Digital Object Identifier)
   </TabItem>
   
-  <TabItem label="Livros e Capítulos" icon="open-book">
-    **Exemplos de metadados no Zotero:**
-    * Título do Livro ou Capítulo
-    * Autor / Editor
-    * Editora
-    * Local (Cidade de publicação)
-    * Ano
+  <TabItem label="Books and Chapters" icon="open-book">
+    **Examples of metadata in Zotero:**
+    * Book or Chapter Title
+    * Author / Editor
+    * Publisher
+    * Place (City of publication)
+    * Year
     * ISBN
   </TabItem>
   
-  <TabItem label="Web e Mídia" icon="laptop">
-    **Exemplos de metadados no Zotero:**
-    * Título da Página Web ou Podcast
-    * Título do Site ou Programa
-    * URL (Link de acesso)
-    * Data de Acesso (Crucial para normas ABNT)
-    * Data de Publicação original
+  <TabItem label="Web and Media" icon="laptop">
+    **Examples of metadata in Zotero:**
+    * Web Page or Podcast Title
+    * Website or Program Title
+    * URL (Access link)
+    * Access Date (Crucial for citation styles)
+    * Original Publication Date
   </TabItem>
   
-  <TabItem label="Outros Formatos" icon="puzzle">
-    *(Ex: Obras de arte, Mapas, Patentes, Leis)*
+  <TabItem label="Other Formats" icon="puzzle">
+    *(e.g., Artwork, Maps, Patents, Statutes)*
     
-    **Exemplos de metadados adaptáveis:**
-    * Artista / Autoridade
-    * Instituição ou Tribunal
-    * Tipo de Obra / Número do Processo
-    * Data de criação / promulgação
+    **Examples of adaptable metadata:**
+    * Artist / Authority
+    * Institution or Court
+    * Artwork Type / Case Number
+    * Date created / enacted
   </TabItem>
 </Tabs>
 
 ---
 
-### Métodos de Inserção
+### Insertion Methods
 
-Nesta etapa, nosso objetivo é aprender a alimentar a biblioteca utilizando quatro abordagens diferentes. Escolha a que melhor se adapta ao seu fluxo de trabalho:
+In this section, our objective is to learn how to populate your library using four different approaches. Choose the one that best fits your workflow:
 
 <CardGrid stagger>
-  <Card title="1. Inserção Manual" icon="pencil">
-    Crie um item do zero e preencha seus metadados de forma totalmente independente e personalizada.
+  <Card title="1. Manual Insertion" icon="pencil">
+    Create an item from scratch and fill in its metadata completely independently and customized.
   </Card>
-  <Card title="2. Varinha Mágica" icon="star">
-    Insira artigos instantaneamente utilizando identificadores únicos (PMID, DOI, ISBN, etc).
+  <Card title="2. Magic Wand" icon="star">
+    Insert articles instantly using unique identifiers (PMID, DOI, ISBN, etc.).
   </Card>
-  <Card title="3. Captura Automática" icon="laptop">
-    Utilize o Zotero Connector para extrair itens e anexos em PDF direto do seu navegador.
+  <Card title="3. Automatic Capture" icon="laptop">
+    Use the Zotero Connector to extract items and PDF attachments directly from your browser.
   </Card>
-  <Card title="4. Arrastar e Soltar" icon="document">
-    Adicione arquivos PDF que já estão salvos no seu computador direto para a biblioteca.
+  <Card title="4. Drag and Drop" icon="document">
+    Add PDF files already saved on your computer directly to the library.
   </Card>
 </CardGrid>
 
 ---
-#### 1. Inserção Manual <Badge text="Para livros físicos & outros tipos de material" variant="caution" style={{ fontStyle: 'italic' }} />
+#### 1. Manual Insertion <Badge text="For physical books & other types of material" variant="caution" style={{ fontStyle: 'italic' }} />
 
-Ideal para documentos físicos, livros antigos, relatórios internos ou materiais que não possuem registros estruturados online.
+Ideal for physical documents, old books, internal reports, or materials that do not have structured records online.
 
 <Steps>
-1. Na barra superior do Zotero, clique no ícone de **Novo Item** (ele se parece com um documento atrás de um círculo com um sinal de mais `+` no meio).
-2. Um menu suspenso vai aparecer. Selecione o **tipo de material** que você tem em mãos (ex: Livro, Documento, Artigo de Revista). 
-   Dica: Se não encontrar o tipo exato logo de cara, passe o mouse sobre a opção "Mais" no final da lista para ver todas as categorias disponíveis.
-3. Assim que você selecionar o formato, um item vazio vai ser criado na coluna do meio da sua biblioteca.
-4. Na coluna da direita (Painel de Metadados), clique nos campos em branco (como Título, Autor, Data, Editora) e digite as informações do seu material manualmente.
+1. On the top toolbar of Zotero, click on the **New Item** icon (it looks like a document behind a circle with a plus sign `+` in the middle).
+2. A drop-down menu will appear. Select the **type of material** you have on hand (e.g., Book, Document, Journal Article). 
+   Tip: If you do not find the exact type right away, hover over the "More" option at the end of the list to view all available categories.
+3. As soon as you select the format, an empty item will be created in the central column of your library.
+4. In the right column (Metadata Panel), click on the blank fields (such as Title, Author, Date, Publisher) and type the information of your material manually.
 </Steps>
 
 
-#### 2. Varinha Mágica <Badge text="Mais rápido!" variant="tip" />
+#### 2. Magic Wand <Badge text="Fastest!" variant="tip" />
 
-Neste método, basta ter um identificador único em mãos. O sistema vasculha as bases de dados e preenche os metadados possíveis automaticamente.
+With this method, you only need to have a unique identifier on hand. The system searches the databases and automatically populates the available metadata.
 
 <Steps>
-1. Na barra superior do Zotero (logo ao lado do botão verde de Novo Item), clique no ícone de **Adicionar Item(ns) por Identificador**. Ele tem exatamente o formato de uma **varinha mágica**.
-2. Uma pequena barra de pesquisa vai aparecer ali mesmo na barra superior.
-3. Digite ou cole o código identificador do seu documento. Os mais úteis para o nosso fluxo de pesquisa são:
-   * **DOI:** *Digital Object Indentifier* ou *Objeto de Indentificação Digital.
-   * **ISBN:** O código de registro de livros. 
-   * **PMID:** O número de identificação de artigos na base PubMed.
-4. Pressione a tecla `Enter` (ou `Return`) no seu teclado. O Zotero vai processar a busca nas bases globais e catalogar as informações possíveis. 
+1. On the top toolbar of Zotero (right next to the New Item button), click on the **Add Item(s) by Identifier** icon. It has the exact shape of a **magic wand**.
+2. A small search bar will appear right there on the top toolbar.
+3. Type or paste the identifier code of your document. The most useful ones for our research workflow are:
+   * **DOI:** *Digital Object Identifier*.
+   * **ISBN:** The registration code for books. 
+   * **PMID:** The identification number for articles in the PubMed database.
+4. Press the `Enter` (or `Return`) key on your keyboard. Zotero will process the search across global databases and catalog all available information. 
 </Steps>
 
 
-#### 3. Captura Automática <Badge text="Mais Utilizada" variant="success" />
+#### 3. Automatic Capture <Badge text="Most Used" variant="success" />
 
-A maneira mais prática no dia a dia. Com a extensão instalada no seu navegador, você pode salvar a referência completa (e muitas vezes o PDF junto!) com apenas um clique enquanto lê o artigo. Além de artigos, consegue capturar outras referencias online, como vídeos do youtube, websites, etc.
+The most practical everyday approach. With the extension installed in your browser, you can save the complete reference (and often the PDF as well!) with a single click while reading the article. In addition to articles, it can capture other online references such as YouTube videos, websites, etc.
 
 <Steps>
-1. **Deixe o aplicativo aberto:** O aplicativo principal (Zotero) precisa estar aberto e rodando no seu computador em segundo plano para funcionar.
-2. No seu navegador, acesse a página do material que você quer referenciar (pode ser um artigo na SciELO, um vídeo no youtube ou até uma reportagem).
-3. Localize o ícone do **Zotero Connector** na barra de extensões (geralmente no canto superior direito do seu navegador), ou no caso do safari, do lado esquerdo da barra de links. 
-4. **Observe a mudança de ícone:** A extensão altera seu ícone dependendo do que detecta na tela. O ícone pode aparecer como uma folha pautada (artigo), um livro azul, um jornal ou uma página web comum. Se houver vários artigos na mesma página, ele vira uma pasta amarela.
-5. Clique no ícone. Uma pequena notificação aparecerá no canto da tela confirmando que os metadados (e o PDF original, quando disponível em acesso aberto) estão sendo salvos na sua biblioteca.
-6. Na notificação, ou de uma janela pop-up, como no caso de uma página com vários artigos (como uma busca do PubMed), você pode alterar a localização de destino do arquivo ou selecionar quais artigos você gostaria de salvar (em páginas de buscas).
+1. **Keep the application open:** The main application (Zotero) needs to be open and running in the background on your computer to work.
+2. In your browser, go to the page of the material you want to reference (it can be an article on SciELO, a YouTube video, or even a news report).
+3. Locate the **Zotero Connector** icon on your extensions bar (usually in the upper-right corner of your browser), or in Safari, on the left side of the address bar. 
+4. **Observe the icon change:** The extension alters its icon depending on what it detects on screen. The icon may appear as a lined sheet of paper (article), a blue book, a newspaper, or a regular web page. If there are multiple articles on the same page, it turns into a yellow folder.
+5. Click the icon. A small notification will appear in the corner of the screen confirming that the metadata (and the original PDF, when open access is available) are being saved to your library.
+6. In the notification, or in a pop-up window when on a page with multiple articles (such as a PubMed search), you can change the target location of the file or select which articles you would like to save (on search pages).
 </Steps>
 
-:::tip[Para onde foi a minha referência?]
-O Zotero sempre envia a nova captura diretamente para a pasta (Coleção) que estiver selecionada lá no seu aplicativo principal. Crie o hábito de clicar na pasta específica do seu projeto atual antes de começar as suas buscas na internet!
+:::tip[Where did my reference go?]
+Zotero always sends the newly captured reference directly to the folder (Collection) currently selected in your main application. Make a habit of clicking on the specific folder for your current project before starting your internet searches!
 :::
 
-#### 4. Arrastar e Soltar <Badge text="Para PDFs locais" variant="danger" />
+#### 4. Drag and Drop <Badge text="For local PDFs" variant="danger" />
 
-Tem artigos e teses já baixados no seu computador? Basta arrastar o arquivo PDF para dentro da sua biblioteca. O software tenta ler o documento e recuperar os metadados para montar a referência automaticamente.
+Already have articles and theses downloaded to your computer? Simply drag the PDF file into your library. The software attempts to read the document and retrieve metadata to build the reference automatically.
 
 <Steps>
-1. Deixe o Zotero aberto e localize a pasta no seu computador onde o arquivo PDF está salvo.
-2. Clique no arquivo, segure e arraste-o diretamente para a coluna do meio do Zotero (sua lista de referências).
-3. Solte o botão do mouse. O Zotero vai importar o arquivo e iniciar um processo rápido de "recuperação de metadados".
-4. Se o reconhecimento for bem-sucedido, o PDF vai se transformar em um "Item" completo (com o ícone de artigo ou livro) e os campos serão preenchidos. O arquivo original ficará guardado como um anexo dentro desse item.
+1. Keep Zotero open and locate the folder on your computer where the PDF file is saved.
+2. Click on the file, hold, and drag it directly into the central column of Zotero (your references list).
+3. Release the mouse button. Zotero will import the file and initiate a quick "metadata retrieval" process.
+4. If the recognition is successful, the PDF will turn into a complete "Item" (with an article or book icon) and the fields will be populated. The original file will be stored as an attachment inside this item.
 </Steps>
 
-:::note[O que o Zotero lê dentro do PDF?]
-É importante entender que PDFs científicos não são apenas texto visual. Quando uma editora publica um artigo moderno, ela embute **metadados ocultos** (como Título, Autor e DOI) no próprio código do arquivo. 
+:::note[What does Zotero read inside the PDF?]
+It is important to understand that scientific PDFs are not just visual text. When a publisher releases a modern article, it embeds **hidden metadata** (such as Title, Author, and DOI) within the file code itself. 
 
-O Zotero varre o documento buscando esses metadados invisíveis ou tentando ler um DOI impresso na primeira página para consultar suas bases online.
+Zotero scans the document looking for these invisible metadata or tries to read a DOI printed on the first page to query its online databases.
 
-**E se falhar?**
-Se o seu PDF for um livro antigo escaneado, uma tese sem metadados embutidos, ou um documento mal formatado, o Zotero não conseguirá encontrar esses dados. O arquivo continuará na sua biblioteca apenas como um anexo solto. Nesses casos, você precisará clicar com o botão direito nele, selecionar **"Criar Item Pai"** (Create Parent Item), digitar um identificador ou digitar os dados manualmente.
+**What if it fails?**
+If your PDF is an old scanned book, a thesis without embedded metadata, or a poorly formatted document, Zotero will not be able to find these data. The file will remain in your library as a standalone attachment. In these cases, you will need to right-click on it, select **"Create Parent Item"**, enter an identifier, or type the data manually.
 :::
 
-#### 5. Importação em Lote <Badge text="Extra" variant="tip" />
+#### 5. Batch Import <Badge text="Extra" variant="tip" />
 
-Caso você estiver fazendo uma Revisão Sistemática ou migrando de outro gerenciador (como Mendeley ou EndNote), não precisará inserir os itens um a um. 
+If you are conducting a Systematic Review or migrating from another reference manager (such as Mendeley or EndNote), you will not need to insert items one by one. 
 
-Bases de dados científicas (como PubMed, Scopus e Web of Science) permitem que você exporte dezenas ou centenas de resultados de pesquisa em um único arquivo de texto (geralmente nos formatos `.ris`, `.bib` ou `.bibtex`).
+Scientific databases (such as PubMed, Scopus, and Web of Science) allow you to export dozens or hundreds of search results in a single text file (usually in `.ris`, `.bib`, or `.bibtex` formats).
 
 <Steps>
-1. Faça a sua pesquisa na base de dados (ex: PubMed) e procure pelo botão de **Export** ou **Citation**.
-2. Escolha salvar o arquivo no formato **RIS** ou **BibTeX** no seu computador.
-3. Com o Zotero aberto, clique no menu superior **Arquivo** (File) > **Importar...** (Import...).
-4. Selecione a opção "Um arquivo" e localize o documento que você baixou.
-5. O Zotero vai criar uma nova pasta na sua biblioteca e importar todas as dezenas de referências de uma vez só, já com os metadados organizados!
+1. Perform your search in the database (e.g., PubMed) and look for the **Export** or **Citation** button.
+2. Choose to save the file in **RIS** or **BibTeX** format on your computer.
+3. With Zotero open, click on the top menu **File** > **Import...**.
+4. Select the option "A file" and locate the document you downloaded.
+5. Zotero will create a new folder in your library and import all dozens of references at once, with the metadata already organized!
 </Steps>
 
-:::note[Exportação]
-Assim como você pode importar arquivos de outros gerenciadores, se um dia você precisar fazer um backup manual ou enviar todas as suas referências para um colega, basta ir no menu **Arquivo > Exportar Biblioteca...** (Export Library...). 
+:::note[Exporting]
+Just as you can import files from other reference managers, if you ever need to perform a manual backup or send all your references to a colleague, simply go to the **File > Export Library...** menu. 
 
-Você poderá escolher o formato de saída (como RIS ou BibTeX) e o Zotero criará um arquivo contendo toda a sua coleção para ser lido em qualquer outro software.
+You can choose the output format (such as RIS or BibTeX), and Zotero will create a file containing your entire collection to be read by any other software.
 :::
