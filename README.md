@@ -1,54 +1,45 @@
-# Minicurso: Gestão Bibliográfica com Zotero 📚
+# Curso CIPET II: Zotero Reference Management Course
 
-Material de apoio e documentação para o minicurso de introdução à gestão de referências bibliográficas utilizando o Zotero, apresentado no [II CONGRESSO INTERNACIONAL DE EDUCAÇÃO, TECNOLOGIA E FORMAÇÃO DOCENTE - CIPET](https://www.even3.com.br/ii-congresso-internacional-de-educacao-tecnologia-e-formacao-docente-online-711344/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21515685.svg)](https://doi.org/10.5281/zenodo.21515685) 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
-Este projeto foi construído utilizando [Astro](https://astro.build) e o template [Starlight](https://starlight.astro.build/).
+Open-source, multilingual documentation and crash course on reference management using **Zotero**. 
 
-## 📚 Acesso ao material
+**Live Course:** [odisseuz.github.io/curso-zotero](https://odisseuz.github.io/curso-zotero/)
 
-O conteúdo completo do minicurso está disponível em:
+## Features
+*   **Languages:** English, Spanish, and Portuguese.
+*   **Topics:** Installation, Item Insertion, Metadata, Tagging, and WebDAV Sync.
+*   **Tech Stack:** Astro & Starlight.
 
-[https://odisseuz.github.io/curso-zotero/](https://odisseuz.github.io/curso-zotero/)
-
-## Desenvolvimento local
-
-1. Instale as dependências:
-
-   ```bash
-   npm install
-   ```
-
-2. Inicie o servidor de desenvolvimento:
-
-   ```bash
-   npm run dev
-   ```
-
-3. Acesse [http://localhost:4321/curso-zotero/](http://localhost:4321/curso-zotero/).
-
-Para gerar a versão de produção:
-
+## Local Development
 ```bash
-npm run build
+git clone [https://github.com/odisseuz/curso-zotero.git](https://github.com/odisseuz/curso-zotero.git)
+cd curso-zotero
+npm install
+npm run dev
+```
+---
+# Minicurso: Gestão Bibliográfica com Zotero
+Material de apoio para o minicurso de introdução à gestão de referências bibliográficas com Zotero, que será apresentadono II CIPET.
+Acesso ao material: [odisseuz.github.io/curso-zotero]
+
+## Desenvolvimento Local
+
+```Bash
+git clone [https://github.com/odisseuz/curso-zotero.git](https://github.com/odisseuz/curso-zotero.git)
+cd curso-zotero
+npm install
+npm run dev
 ```
 
-Os arquivos estáticos serão gerados em `dist/`.
 
 ## Idiomas
-
-O português é o idioma principal e não utiliza prefixo na URL. As versões em espanhol e inglês usam os prefixos `/es/` e `/en/`.
-
-```text
-src/content/docs/       Português
-src/content/docs/es/    Espanhol
-src/content/docs/en/    Inglês
-```
-
-Os arquivos equivalentes devem manter o mesmo caminho e nome em cada idioma para que o seletor de idiomas e a navegação funcionem corretamente.
+O português é o idioma principal. As versões em espanhol e inglês usam os prefixos /es/ e /en/.
 
 ## Deploy
-
-O deploy para o GitHub Pages é executado automaticamente pelo workflow `.github/workflows/deploy.yml` após cada push para a branch `main`.
+Executado automaticamente pelo .github/workflows/deploy.yml após cada push na branch main.
 
 ## Licença
-Os textos e imagens deste material estão licenciados sob a [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/). O código-fonte do site segue a licença do template original.
+Conteúdo: CC-BY 4.0. Código-fonte: Licença do template original.
