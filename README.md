@@ -1,8 +1,9 @@
 # Curso CIPET II: Zotero Reference Management Course
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21515685.svg)](https://doi.org/10.5281/zenodo.21515685) 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Open-source, multilingual documentation and crash course on reference management using **Zotero**. 
 
@@ -20,6 +21,17 @@ cd curso-zotero
 npm install
 npm run dev
 ```
+
+## Languages
+English, Spanish and Portuguese
+
+## Deploy
+Automatically executed by .github/workflows/deploy.yml after each push in main branch
+
+## License
+
+Content and Image: CC-BY, Source-Code: MIT license
+
 ---
 # Minicurso: Gestão Bibliográfica com Zotero
 Material de apoio para o minicurso de introdução à gestão de referências bibliográficas com Zotero, que será apresentadono II CIPET.
