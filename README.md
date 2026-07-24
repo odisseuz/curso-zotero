@@ -16,7 +16,7 @@ Open-source, multilingual documentation and crash course on reference management
 
 ## Local Development
 ```bash
-git clone [https://github.com/odisseuz/curso-zotero.git](https://github.com/odisseuz/curso-zotero.git)
+git clone https://github.com/odisseuz/curso-zotero.git
 cd curso-zotero
 npm install
 npm run dev
@@ -40,7 +40,7 @@ Acesso ao material: [odisseuz.github.io/curso-zotero]
 ## Desenvolvimento Local
 
 ```Bash
-git clone [https://github.com/odisseuz/curso-zotero.git](https://github.com/odisseuz/curso-zotero.git)
+git clone https://github.com/odisseuz/curso-zotero.git
 cd curso-zotero
 npm install
 npm run dev
