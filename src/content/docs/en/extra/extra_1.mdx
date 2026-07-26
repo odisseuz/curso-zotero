@@ -2,16 +2,14 @@
 title: Extra
 description: On this page, we will cover items that unfortunately we did not have time for during class
 ---
-import { Badge } from '@astrojs/starlight/components';
+import { Badge, Aside} from '@astrojs/starlight/components';
 
 ### Going Further <Badge text="Extra Material" variant="tip" />
 
 Since our live class time is limited, I created this section of supplementary materials for you to consult later. Here, you will find introductions to advanced features to expand your knowledge of the application. Feel free to explore the topics in whichever order you prefer!
 
 <details>
-<summary>
-  <strong>Interaction with PDFs and Web Pages</strong> <Badge text="Important" variant="danger"/>
-</summary>
+<summary><strong>Interaction with PDFs and Web Pages</strong> <Badge text="Important" variant="danger"/></summary>
 
 Zotero features a built-in reader that allows active annotations without needing external programs.
 
@@ -26,6 +24,17 @@ After reading, you can consolidate all annotations into a single file:
 1. Return to your library and right-click on the read article.
 2. Select the option **Add Note from Annotations**.
 3. Zotero will automatically generate a structured document. This note compiles all your highlights, retaining the colors used, comments, captured images, and page numbers for each citation.
+
+<Aside type="tip" title="Accessibility: Read Aloud">
+Zotero has a native feature to read your documents aloud. To activate it, open a file in the Zotero reader and click the **headphone icon** located in the top bar, just below the document tabs. 
+Upon clicking, you can choose between three voice synthesis options. Check out the differences:
+| Voice Type | Requires Internet? | Multilingual Support | Notes |
+| :--- | :--- | :--- | :--- |
+| **Standard** | Yes | No | Requires a Zotero account. Usage becomes unlimited if you subscribe to one of the paid storage plans. |
+| **Premium** | Yes | Yes | High-quality voices in multiple languages. Consumes a usage time quota, which can be expanded with paid plans. |
+| **Local** | No (Offline) | Depends on the device | Uses your operating system's native voice engine. |
+</Aside>
+
 </details>
 
 <details>
@@ -44,7 +53,6 @@ Zotero allows the creation of shared libraries to organize references and docume
 * **Group Types:** Groups can be Private (accessible by invitation only) or Public (with different levels of read and edit permissions).
 * **Application Interface:** After joining a group, a new section named **Group Libraries** will appear in the left sidebar of your desktop app, located right below your personal library.
 * **Collaboration:** Members with editing permission can add articles, attach PDFs, and create notes. Every change made within this shared library is automatically updated for the rest of the team members.
-
 </details>
 
 <details>
