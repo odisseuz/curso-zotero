@@ -130,9 +130,16 @@ O Zotero sempre envia a nova captura diretamente para a pasta (Coleção) que es
 :::note[Na prática: os metadados vieram, mas o PDF não]
 A **varinha mágica** e o **Zotero Connector** podem criar a referência corretamente sem conseguir baixar o PDF. Isso acontece, por exemplo, quando o arquivo está atrás de uma página de acesso, exige login institucional ou não é disponibilizado diretamente pelo site.
 
-Nesse caso, mantenha o item que já foi criado e procure o botão **PDF**, **Texto completo** ou **Download** na página do artigo. Se o Connector reconhecer o PDF nessa página, você pode tentar capturá-lo por ali. Caso contrário, baixe o arquivo para o computador e **arraste-o sobre a referência já existente no Zotero**. Assim, o PDF será adicionado como anexo daquele item, em vez de criar uma segunda referência separada.
+Nesse caso, baixe o PDF e adicione-o à sua biblioteca (por exemplo, arrastando o arquivo para dentro do Zotero). Como o Zotero tenta ler os metadados do arquivo, é comum surgir um **segundo item para a mesma referência**: aquele criado pela varinha ou pelo Connector e um novo item gerado a partir do PDF.
 
-Esse é um fluxo comum no uso real: primeiro capturamos os metadados, depois verificamos se o texto completo veio junto e, quando necessário, anexamos o arquivo manualmente.
+O recomendado nesse caso é **mesclar** os dois itens em um só:
+
+1. Selecione os dois itens (use `Ctrl` + clique no Windows/Linux ou `Cmd` + clique no Mac).
+2. Clique com o botão direito e escolha **Mesclar Itens...** (*Merge Items...*).
+3. Na janela que abrir, escolha o item que será o principal (de preferência aquele com os metadados mais completos) e confirme.
+4. O Zotero unirá tudo em um único item, mantendo os metadados escolhidos e reunindo o PDF, as notas e as etiquetas.
+
+Assim, você evita referências duplicadas e mantém a ficha e o arquivo juntos.
 :::
 
 #### 4. Arrastar e Soltar <Badge text="Para PDFs locais" variant="danger" />

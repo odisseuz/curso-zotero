@@ -21,6 +21,14 @@ La instalación de la aplicación dependerá de tu sistema operativo. Accede a l
     :::tip[Consejo de limpieza]
     Después de la instalación, puedes expulsar el instalador del sistema y eliminar el archivo `.dmg` para liberar espacio.
     :::
+
+    #### Alternativa con Homebrew
+
+    Si utilizas [Homebrew](https://brew.sh/), puedes instalar Zotero directamente desde la terminal:
+
+    ```bash
+    brew install --cask zotero
+    ```
   </TabItem>
   <TabItem icon="linux" label="Linux (Debian/Ubuntu)">
       #### Instalación mediante Flatpak
@@ -42,6 +50,41 @@ La instalación de la aplicación dependerá de tu sistema operativo. Accede a l
 
       # 3. Instala Zotero
       flatpak install flathub org.zotero.Zotero
+      ```
+
+      #### Instalación mediante Nix (NixOS)
+
+      En **Nix/NixOS**, Zotero también está disponible como paquete en `nixpkgs`. Las formas recomendadas son usar un shell temporal o declarar el paquete en la configuración:
+
+      ```bash
+      # Uso temporal (recomendado para probar)
+      nix-shell -p zotero
+      ```
+
+      ```
+      # En NixOS, de forma declarativa (configuration.nix)
+      environment.systemPackages = [
+        pkgs.zotero
+      ];
+      ```
+
+      **En NixOS**, si quieres instalarlo con `nix-env`:
+
+      ```bash
+      nix-env -iA nixos.zotero
+      ```
+
+      :::caution[El nix-env modifica el perfil local]
+      `nix-env` modifica permanentemente el perfil local de paquetes instalados, que debes actualizar y mantener tú — como con un gestor de paquetes tradicional, renunciando a varios beneficios del Nix. Prefiere `nix-shell` o la configuración de NixOS.
+      :::
+
+      **Fuera de NixOS**:
+
+      ```bash
+      # sin flakes:
+      nix-env -iA nixpkgs.zotero
+      # con flakes:
+      nix profile add nixpkgs#zotero
       ```
     </TabItem>
  </Tabs>

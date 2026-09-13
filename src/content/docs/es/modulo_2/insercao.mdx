@@ -130,9 +130,16 @@ Zotero siempre envía la nueva captura directamente a la carpeta (Colección) qu
 :::note[En la práctica: llegaron los metadatos, pero no el PDF]
 La **varita mágica** y **Zotero Connector** pueden crear correctamente la referencia sin conseguir descargar el PDF. Esto ocurre, por ejemplo, cuando el archivo está detrás de una página de acceso, requiere un inicio de sesión institucional o el sitio no lo ofrece directamente.
 
-En ese caso, conserva el ítem que ya se creó y busca el botón **PDF**, **Texto completo** o **Descargar** en la página del artículo. Si Connector reconoce el PDF en esa página, puedes intentar capturarlo desde allí. De lo contrario, descarga el archivo en la computadora y **arrástralo sobre la referencia ya existente en Zotero**. De este modo, el PDF se añadirá como archivo adjunto de ese ítem, en lugar de crear una segunda referencia independiente.
+En ese caso, descarga el PDF y añádelo a tu biblioteca (por ejemplo, arrastrando el archivo a Zotero). Como Zotero intenta leer los metadatos del archivo, es habitual que aparezca un **segundo ítem para la misma referencia**: el creado por la varita o por Connector y un nuevo ítem generado a partir del PDF.
 
-Este es un flujo habitual en el uso real: primero capturamos los metadatos, después comprobamos si se incluyó el texto completo y, cuando es necesario, adjuntamos el archivo manualmente.
+Lo recomendado en este caso es **combinar** los dos ítems en uno solo:
+
+1. Selecciona los dos ítems (usa `Ctrl` + clic en Windows/Linux o `Cmd` + clic en Mac).
+2. Haz clic con el botón derecho y elige **Combinar elementos...** (*Merge Items...*).
+3. En la ventana que se abra, elige el ítem que será el principal (preferiblemente el que tenga los metadatos más completos) y confirma.
+4. Zotero unirá todo en un único ítem, manteniendo los metadatos elegidos y reuniendo el PDF, las notas y las etiquetas.
+
+De esta forma evitarás referencias duplicadas y mantendrás la ficha y el archivo juntos.
 :::
 
 #### 4. Arrastrar y soltar <Badge text="Para PDF locales" variant="danger" />

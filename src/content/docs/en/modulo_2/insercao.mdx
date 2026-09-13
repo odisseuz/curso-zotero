@@ -130,9 +130,16 @@ Zotero always sends the newly captured reference directly to the folder (Collect
 :::note[In practice: the metadata was saved, but the PDF was not]
 The **magic wand** and the **Zotero Connector** may create the reference correctly without being able to download the PDF. This can happen when the file is behind an access page, requires an institutional login, or is not made directly available by the website.
 
-In this situation, keep the item that has already been created and look for a **PDF**, **Full text**, or **Download** button on the article page. If the Connector recognizes the PDF there, you can try capturing it from that page. Otherwise, download the file to your computer and **drag it onto the existing reference in Zotero**. This adds the PDF as an attachment to that item instead of creating a second, separate reference.
+In this case, download the PDF and add it to your library (for example, by dragging the file into Zotero). Because Zotero tries to read the file's metadata, it is common to end up with a **second item for the same reference**: the one created by the wand or the Connector, plus a new item generated from the PDF.
 
-This is a common real-world workflow: first capture the metadata, then check whether the full text was included and, when necessary, attach the file manually.
+The recommended approach here is to **merge** the two items into one:
+
+1. Select both items (use `Ctrl` + click on Windows/Linux or `Cmd` + click on Mac).
+2. Right-click and choose **Merge Items...**.
+3. In the window that opens, choose which item will be the primary one (ideally the one with the most complete metadata) and confirm.
+4. Zotero will combine everything into a single item, keeping the chosen metadata and bringing together the PDF, notes, and tags.
+
+This way you avoid duplicate references and keep the record and the file together.
 :::
 
 #### 4. Drag and Drop <Badge text="For local PDFs" variant="danger" />
