@@ -9,7 +9,7 @@ tableOfContents:
 import { Aside, Tabs, TabItem, Card, CardGrid, Badge, Icon, LinkCard, Steps } from '@astrojs/starlight/components';
 
 
-### Itens e Metadados
+## Itens e Metadados
 
 :::note[O que é um Item?]
 Primeiramente, precisamos entender o conceito de **Item**. 
@@ -62,9 +62,9 @@ Os itens podem ser de diversos tipos, e o Zotero adapta os campos de metadados a
 
 ---
 
-### Métodos de Inserção
+## Métodos de Inserção
 
-Nesta etapa, nosso objetivo é aprender a alimentar a biblioteca utilizando quatro abordagens diferentes. Escolha a que melhor se adapta ao seu fluxo de trabalho:
+Nesta etapa, nosso objetivo é aprender a alimentar a biblioteca utilizando cinco abordagens diferentes. Escolha a que melhor se adapta ao seu fluxo de trabalho:
 
 <CardGrid stagger>
   <Card title="1. Inserção Manual" icon="pencil">
@@ -79,10 +79,13 @@ Nesta etapa, nosso objetivo é aprender a alimentar a biblioteca utilizando quat
   <Card title="4. Arrastar e Soltar" icon="document">
     Adicione arquivos PDF que já estão salvos no seu computador direto para a biblioteca.
   </Card>
+  <Card title="5. Importação em Lote" icon="open-book">
+    Importe dezenas de referências de uma vez, a partir de arquivos RIS ou BibTeX exportados de bases de dados.
+  </Card>
 </CardGrid>
 
 ---
-#### 1. Inserção Manual <Badge text="Para livros físicos & outros tipos de material" variant="caution" style={{ fontStyle: 'italic' }} />
+### 1. Inserção Manual <Badge text="Para livros físicos & outros tipos de material" variant="caution" style={{ fontStyle: 'italic' }} />
 
 Ideal para documentos físicos, livros antigos, relatórios internos ou materiais que não possuem registros estruturados online.
 
@@ -95,7 +98,7 @@ Ideal para documentos físicos, livros antigos, relatórios internos ou materiai
 </Steps>
 
 
-#### 2. Varinha Mágica <Badge text="Mais rápido!" variant="tip" />
+### 2. Varinha Mágica <Badge text="Mais rápido!" variant="tip" />
 
 Neste método, basta ter um identificador único em mãos. O sistema vasculha as bases de dados e preenche os metadados possíveis automaticamente.
 
@@ -103,14 +106,14 @@ Neste método, basta ter um identificador único em mãos. O sistema vasculha as
 1. Na barra superior do Zotero (logo ao lado do botão de Novo Item), clique no ícone de **Adicionar Item(ns) por Identificador**. Ele tem exatamente o formato de uma **varinha mágica**.
 2. Uma pequena barra de pesquisa vai aparecer ali mesmo na barra superior.
 3. Digite ou cole o código identificador do seu documento. Os mais úteis para o nosso fluxo de pesquisa são:
-   * **DOI:** *Digital Object Indentifier* ou *Objeto de Indentificação Digital.
+   * **DOI:** *Digital Object Identifier* ou *Objeto de Identificação Digital*.
    * **ISBN:** O código de registro de livros. 
    * **PMID:** O número de identificação de artigos na base PubMed.
 4. Pressione a tecla `Enter` (ou `Return`) no seu teclado. O Zotero vai processar a busca nas bases globais e catalogar as informações possíveis. 
 </Steps>
 
 
-#### 3. Captura Automática <Badge text="Mais Utilizada" variant="success" />
+### 3. Captura Automática <Badge text="Mais Utilizada" variant="success" />
 
 A maneira mais prática no dia a dia. Com a extensão instalada no seu navegador, você pode salvar a referência completa (e muitas vezes o PDF junto!) com apenas um clique enquanto lê o artigo. Além de artigos, consegue capturar outras referencias online, como vídeos do youtube, websites, etc.
 
@@ -142,7 +145,7 @@ O recomendado nesse caso é **mesclar** os dois itens em um só:
 Assim, você evita referências duplicadas e mantém a ficha e o arquivo juntos.
 :::
 
-#### 4. Arrastar e Soltar <Badge text="Para PDFs locais" variant="danger" />
+### 4. Arrastar e Soltar <Badge text="Para PDFs locais" variant="danger" />
 
 Tem artigos e teses já baixados no seu computador? Basta arrastar o arquivo PDF para dentro da sua biblioteca. O software tenta ler o documento e recuperar os metadados para montar a referência automaticamente.
 
@@ -162,9 +165,9 @@ O Zotero varre o documento buscando esses metadados invisíveis ou tentando ler 
 Se o seu PDF for um livro antigo escaneado, uma tese sem metadados embutidos, ou um documento mal formatado, o Zotero não conseguirá encontrar esses dados. O arquivo continuará na sua biblioteca apenas como um anexo solto. Nesses casos, você precisará clicar com o botão direito nele, selecionar **"Criar Item Pai"** (Create Parent Item), digitar um identificador ou digitar os dados manualmente.
 :::
 
-#### 5. Importação em Lote <Badge text="Extra" variant="tip" />
+### 5. Importação em Lote <Badge text="Extra" variant="tip" />
 
-Caso você estiver fazendo uma Revisão Sistemática ou migrando de outro gerenciador (como Mendeley ou EndNote), não precisará inserir os itens um a um. 
+Caso você esteja fazendo uma Revisão Sistemática ou migrando de outro gerenciador (como Mendeley ou EndNote), não precisará inserir os itens um a um. 
 
 Bases de dados científicas (como PubMed, Scopus e Web of Science) permitem que você exporte dezenas ou centenas de resultados de pesquisa em um único arquivo de texto (geralmente nos formatos `.ris`, `.bib` ou `.bibtex`).
 

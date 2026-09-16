@@ -4,7 +4,7 @@ description: En esta página veremos temas que, lamentablemente, no tuvimos tiem
 ---
 import { Badge, Aside} from '@astrojs/starlight/components';
 
-### Más allá <Badge text="Material adicional" variant="tip" />
+## Más allá <Badge text="Material adicional" variant="tip" />
 
 Como nuestro tiempo en vivo es limitado, creé esta sección de materiales complementarios para que puedas consultarlos después. Aquí encontrarás introducciones a funciones avanzadas para ampliar tus conocimientos sobre la aplicación. ¡Explora los temas en el orden que prefieras!
 
@@ -84,8 +84,16 @@ Zotero es de código abierto, lo que permite que desarrolladores independientes 
 4. Selecciona el archivo `.xpi` descargado y reinicia Zotero.
 
 **Ejemplos populares:**
-* **ZotFile:** Esencial para cambiar automáticamente el nombre de tus archivos PDF según el autor y el año, y para extraer anotaciones realizadas en lectores externos.
 * **Better BibTeX:** Fundamental para quienes escriben con LaTeX o Markdown (como en Obsidian), ya que mejora la generación y la estabilidad de las claves de cita.
+* **ZotMoov** o **Attanger:** Para mover y vincular automáticamente tus PDF a una carpeta de tu computadora, fuera del almacenamiento de Zotero.
+
+:::caution[El antiguo ZotFile ya no funciona]
+Muchos tutoriales en internet todavía recomiendan **ZotFile**. Evítalo: **ya no se mantiene desde 2022 y es incompatible con Zotero 7 o superior** — el propio autor lo confirma en la página del proyecto.
+
+Las dos funciones que cumplía ahora son nativas de Zotero:
+* **Renombrar archivos:** haz clic con el botón derecho en el adjunto y elige **Renombrar archivo a partir de los metadatos del ítem padre**.
+* **Extraer anotaciones:** usa **Añadir nota a partir de anotaciones**, como vimos al inicio de esta página.
+:::
 
 </details>
 

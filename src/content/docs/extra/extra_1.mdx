@@ -4,7 +4,7 @@ description: Nessa página, vamos ver coisas que infelizmente não tivemos tempo
 ---
 import { Badge, Aside} from '@astrojs/starlight/components';
 
-### Indo Além <Badge text="Material Extra" variant="tip" />
+## Indo Além <Badge text="Material Extra" variant="tip" />
 
 Como o nosso tempo ao vivo é curto, criei esta seção de materiais complementares para você consultar depois. Aqui, você encontrará introduções a recursos avançados para expandir o seu conhecimento sobre o aplicativo. Fique à vontade para explorar os tópicos na ordem que preferir!
 
@@ -81,13 +81,21 @@ O Zotero possui código aberto, o que permite que desenvolvedores independentes 
 
 **Como instalar:**
 1. Baixe o arquivo do plugin (geralmente com a extensão `.xpi`) no repositório do desenvolvedor (como o GitHub).
-2. No Zotero, acesse **Ferramentas > Extensões** (Tools > PLugins).
+2. No Zotero, acesse **Ferramentas > Extensões** (Tools > Plugins).
 3. Clique no ícone de engrenagem no canto superior direito e selecione **Install Add-on From File...** (Instalar extensão a partir de um arquivo).
 4. Selecione o arquivo `.xpi` baixado e reinicie o Zotero.
 
 **Exemplos populares:**
-* **ZotFile:** Essencial para renomear automaticamente os seus PDFs com base no autor e ano, e para extrair anotações feitas em leitores externos.
 * **Better BibTeX:** Fundamental para quem escreve usando LaTeX ou Markdown (como no Obsidian), melhorando a geração e estabilidade das chaves de citação.
+* **ZotMoov** ou **Attanger:** Para mover e vincular automaticamente os seus PDFs a uma pasta do computador, fora do armazenamento do Zotero.
+
+:::caution[O antigo ZotFile não funciona mais]
+Muitos tutoriais na internet ainda recomendam o **ZotFile**. Evite-o: **não é mais mantido desde 2022 e é incompatível com o Zotero 7 ou superior** — o próprio autor confirma isso na página do projeto.
+
+As duas funções que ele fazia hoje são nativas do Zotero:
+* **Renomear arquivos:** clique com o botão direito no anexo e escolha **Renomear Arquivo a partir dos Metadados do Item Pai** (*Rename File from Parent Metadata*).
+* **Extrair anotações:** use **Adicionar Nota a partir de Anotações**, como vimos no início desta página.
+:::
 
 </details>
 

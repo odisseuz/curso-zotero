@@ -9,7 +9,7 @@ tableOfContents:
 import { Aside, Tabs, TabItem, Card, CardGrid, Badge, Icon, LinkCard, Steps } from '@astrojs/starlight/components';
 
 
-### Items and Metadata
+## Items and Metadata
 
 :::note[What is an Item?]
 Firstly, we need to understand the concept of an **Item**. 
@@ -62,9 +62,9 @@ Items can be of various types, and Zotero adapts the metadata fields automatical
 
 ---
 
-### Insertion Methods
+## Insertion Methods
 
-In this section, our objective is to learn how to populate your library using four different approaches. Choose the one that best fits your workflow:
+In this section, our objective is to learn how to populate your library using five different approaches. Choose the one that best fits your workflow:
 
 <CardGrid stagger>
   <Card title="1. Manual Insertion" icon="pencil">
@@ -79,10 +79,13 @@ In this section, our objective is to learn how to populate your library using fo
   <Card title="4. Drag and Drop" icon="document">
     Add PDF files already saved on your computer directly to the library.
   </Card>
+  <Card title="5. Batch Import" icon="open-book">
+    Import dozens of references at once from RIS or BibTeX files exported from databases.
+  </Card>
 </CardGrid>
 
 ---
-#### 1. Manual Insertion <Badge text="For physical books & other types of material" variant="caution" style={{ fontStyle: 'italic' }} />
+### 1. Manual Insertion <Badge text="For physical books & other types of material" variant="caution" style={{ fontStyle: 'italic' }} />
 
 Ideal for physical documents, old books, internal reports, or materials that do not have structured records online.
 
@@ -95,7 +98,7 @@ Ideal for physical documents, old books, internal reports, or materials that do 
 </Steps>
 
 
-#### 2. Magic Wand <Badge text="Fastest!" variant="tip" />
+### 2. Magic Wand <Badge text="Fastest!" variant="tip" />
 
 With this method, you only need to have a unique identifier on hand. The system searches the databases and automatically populates the available metadata.
 
@@ -110,7 +113,7 @@ With this method, you only need to have a unique identifier on hand. The system 
 </Steps>
 
 
-#### 3. Automatic Capture <Badge text="Most Used" variant="success" />
+### 3. Automatic Capture <Badge text="Most Used" variant="success" />
 
 The most practical everyday approach. With the extension installed in your browser, you can save the complete reference (and often the PDF as well!) with a single click while reading the article. In addition to articles, it can capture other online references such as YouTube videos, websites, etc.
 
@@ -142,7 +145,7 @@ The recommended approach here is to **merge** the two items into one:
 This way you avoid duplicate references and keep the record and the file together.
 :::
 
-#### 4. Drag and Drop <Badge text="For local PDFs" variant="danger" />
+### 4. Drag and Drop <Badge text="For local PDFs" variant="danger" />
 
 Already have articles and theses downloaded to your computer? Simply drag the PDF file into your library. The software attempts to read the document and retrieve metadata to build the reference automatically.
 
@@ -162,7 +165,7 @@ Zotero scans the document looking for these invisible metadata or tries to read 
 If your PDF is an old scanned book, a thesis without embedded metadata, or a poorly formatted document, Zotero will not be able to find these data. The file will remain in your library as a standalone attachment. In these cases, you will need to right-click on it, select **"Create Parent Item"**, enter an identifier, or type the data manually.
 :::
 
-#### 5. Batch Import <Badge text="Extra" variant="tip" />
+### 5. Batch Import <Badge text="Extra" variant="tip" />
 
 If you are conducting a Systematic Review or migrating from another reference manager (such as Mendeley or EndNote), you will not need to insert items one by one. 
 

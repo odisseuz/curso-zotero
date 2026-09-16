@@ -4,7 +4,7 @@ description: On this page, we will cover items that unfortunately we did not hav
 ---
 import { Badge, Aside} from '@astrojs/starlight/components';
 
-### Going Further <Badge text="Extra Material" variant="tip" />
+## Going Further <Badge text="Extra Material" variant="tip" />
 
 Since our live class time is limited, I created this section of supplementary materials for you to consult later. Here, you will find introductions to advanced features to expand your knowledge of the application. Feel free to explore the topics in whichever order you prefer!
 
@@ -82,8 +82,16 @@ Zotero is open source, allowing third-party developers to create extensions (plu
 4. Select the downloaded `.xpi` file and restart Zotero.
 
 **Popular Examples:**
-* **ZotFile:** Essential for automatically renaming your PDFs based on author and year, and for extracting annotations made in external readers.
 * **Better BibTeX:** Fundamental for those who write using LaTeX or Markdown (such as in Obsidian), improving citation key generation and stability.
+* **ZotMoov** or **Attanger:** To automatically move and link your PDFs to a folder on your computer, outside Zotero's storage.
+
+:::caution[The old ZotFile no longer works]
+Many tutorials online still recommend **ZotFile**. Avoid it: it **has not been maintained since 2022 and is incompatible with Zotero 7 or later** — the author himself confirms this on the project page.
+
+Both things it used to do are now built into Zotero:
+* **Renaming files:** right-click the attachment and choose **Rename File from Parent Metadata**.
+* **Extracting annotations:** use **Add Note from Annotations**, as shown at the top of this page.
+:::
 
 </details>
 

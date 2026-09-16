@@ -9,7 +9,7 @@ import { Tabs, TabItem, Card, CardGrid, Badge, Icon, LinkCard, Steps } from '@as
 
 #### Aplicativo Principal:
 
-A instalação do aplicativo vai depender do seu sistema operacional. Acesse a [página oficial de download do Zotero](https://www.zotero.org/download/) para baixar a versão compatível com a seu computador.
+A instalação do aplicativo vai depender do seu sistema operacional. Acesse a [página oficial de download do Zotero](https://www.zotero.org/download/) para baixar a versão compatível com o seu computador.
 <Tabs>
   <TabItem icon="laptop" label="Windows">
     Baixe o instalador `.exe` no site oficial, clique duas vezes no arquivo baixado e siga o assistente de instalação padrão.
@@ -35,7 +35,7 @@ A instalação do aplicativo vai depender do seu sistema operacional. Acesse a [
   
       O pacote tradicional para Linux pode ser baixado diretamente da [página oficial do Zotero](https://www.zotero.org/download/). 
       
-      No entanto, caso você prefira gerenciar seus aplicativos outra forma, é possível instalar a versão em **Flatpak**. Se você estiver usando Debian ou Ubuntu e ainda não tiver o Flatpak configurado, siga os passos abaixo no seu terminal:
+      No entanto, caso você prefira gerenciar seus aplicativos de outra forma, é possível instalar a versão em **Flatpak**. Se você estiver usando Debian ou Ubuntu e ainda não tiver o Flatpak configurado, siga os passos abaixo no seu terminal:
   
       :::tip[Usa outra distribuição?]
       Os comandos abaixo são para distribuições baseadas em Debian/Ubuntu. Se você usa Fedora, Arch ou outras, confira como instalar no seu sistema no [site oficial do Flatpak](https://flatpak.org/setup/) e acesse o [Flathub](https://flathub.org/pt-BR). Além disso, é interessante checar se o Zotero está disponível na loja de aplicativos da sua distro.
@@ -51,17 +51,20 @@ A instalação do aplicativo vai depender do seu sistema operacional. Acesse a [
       # 3. Instale o Zotero
       flatpak install flathub org.zotero.Zotero
       ```
+  </TabItem>
+
+  <TabItem icon="linux" label="Linux (Nix/NixOS)">
 
       #### Instalação via Nix (NixOS)
 
-      No **Nix/NixOS**, o Zotero também está disponível como pacote no `nixpkgs`. As formas recomendadas são usar um shell temporário ou declarar o pacote na configuração:
+      No **Nix/NixOS**, o Zotero está disponível como pacote no `nixpkgs`. As formas recomendadas são usar um shell temporário ou declarar o pacote na configuração:
 
       ```bash
       # Uso temporário (recomendado para experimentar)
       nix-shell -p zotero
       ```
 
-      ```
+      ```nix
       # No NixOS, de forma declarativa (configuration.nix)
       environment.systemPackages = [
         pkgs.zotero
@@ -86,8 +89,8 @@ A instalação do aplicativo vai depender do seu sistema operacional. Acesse a [
       # com flakes:
       nix profile add nixpkgs#zotero
       ```
-    </TabItem>
- </Tabs>
+  </TabItem>
+</Tabs>
 ---
 #### Extensão de navegador (Zotero Connector)
 

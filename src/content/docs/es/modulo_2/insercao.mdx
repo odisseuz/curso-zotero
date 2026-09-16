@@ -9,7 +9,7 @@ tableOfContents:
 import { Aside, Tabs, TabItem, Card, CardGrid, Badge, Icon, LinkCard, Steps } from '@astrojs/starlight/components';
 
 
-### Ítems y metadatos
+## Ítems y metadatos
 
 :::note[¿Qué es un ítem?]
 Primero, debemos comprender el concepto de **ítem**.
@@ -62,9 +62,9 @@ Los ítems pueden ser de diversos tipos, y Zotero adapta automáticamente los ca
 
 ---
 
-### Métodos de inserción
+## Métodos de inserción
 
-En esta etapa, nuestro objetivo es aprender a alimentar la biblioteca mediante cuatro métodos diferentes. Elige el que mejor se adapte a tu flujo de trabajo:
+En esta etapa, nuestro objetivo es aprender a alimentar la biblioteca mediante cinco métodos diferentes. Elige el que mejor se adapte a tu flujo de trabajo:
 
 <CardGrid stagger>
   <Card title="1. Inserción manual" icon="pencil">
@@ -79,10 +79,13 @@ En esta etapa, nuestro objetivo es aprender a alimentar la biblioteca mediante c
   <Card title="4. Arrastrar y soltar" icon="document">
     Añade directamente a la biblioteca archivos PDF que ya están guardados en tu computadora.
   </Card>
+  <Card title="5. Importación por lotes" icon="open-book">
+    Importa decenas de referencias a la vez desde archivos RIS o BibTeX exportados de bases de datos.
+  </Card>
 </CardGrid>
 
 ---
-#### 1. Inserción manual <Badge text="Para libros físicos y otros tipos de material" variant="caution" style={{ fontStyle: 'italic' }} />
+### 1. Inserción manual <Badge text="Para libros físicos y otros tipos de material" variant="caution" style={{ fontStyle: 'italic' }} />
 
 Ideal para documentos físicos, libros antiguos, informes internos o materiales que no tienen registros estructurados en línea.
 
@@ -95,7 +98,7 @@ Ideal para documentos físicos, libros antiguos, informes internos o materiales 
 </Steps>
 
 
-#### 2. Varita mágica <Badge text="¡Más rápido!" variant="tip" />
+### 2. Varita mágica <Badge text="¡Más rápido!" variant="tip" />
 
 Con este método, basta con tener un identificador único. El sistema busca en las bases de datos y completa automáticamente todos los metadatos posibles.
 
@@ -110,7 +113,7 @@ Con este método, basta con tener un identificador único. El sistema busca en l
 </Steps>
 
 
-#### 3. Captura automática <Badge text="La más utilizada" variant="success" />
+### 3. Captura automática <Badge text="La más utilizada" variant="success" />
 
 Es la forma más práctica para el día a día. Con la extensión instalada en tu navegador, puedes guardar la referencia completa (¡y a menudo también el PDF!) con un solo clic mientras lees el artículo. Además de artículos, puedes capturar otras referencias en línea, como videos de YouTube, sitios web, etc.
 
@@ -142,7 +145,7 @@ Lo recomendado en este caso es **combinar** los dos ítems en uno solo:
 De esta forma evitarás referencias duplicadas y mantendrás la ficha y el archivo juntos.
 :::
 
-#### 4. Arrastrar y soltar <Badge text="Para PDF locales" variant="danger" />
+### 4. Arrastrar y soltar <Badge text="Para PDF locales" variant="danger" />
 
 ¿Ya tienes artículos y tesis descargados en tu computadora? Solo tienes que arrastrar el archivo PDF a tu biblioteca. El software intenta leer el documento y recuperar los metadatos para crear automáticamente la referencia.
 
@@ -162,7 +165,7 @@ Zotero examina el documento en busca de esos metadatos invisibles o intenta leer
 Si tu PDF es un libro antiguo escaneado, una tesis sin metadatos incorporados o un documento mal formateado, Zotero no podrá encontrar esos datos. El archivo permanecerá en tu biblioteca únicamente como un adjunto independiente. En esos casos, deberás hacer clic con el botón derecho sobre él, seleccionar **"Crear ítem contenedor"** (Create Parent Item), introducir un identificador o escribir los datos manualmente.
 :::
 
-#### 5. Importación por lotes <Badge text="Extra" variant="tip" />
+### 5. Importación por lotes <Badge text="Extra" variant="tip" />
 
 Si estás realizando una revisión sistemática o migrando desde otro gestor (como Mendeley o EndNote), no tendrás que añadir los ítems uno por uno.
 

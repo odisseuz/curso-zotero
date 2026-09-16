@@ -51,17 +51,20 @@ La instalación de la aplicación dependerá de tu sistema operativo. Accede a l
       # 3. Instala Zotero
       flatpak install flathub org.zotero.Zotero
       ```
+  </TabItem>
+
+  <TabItem icon="linux" label="Linux (Nix/NixOS)">
 
       #### Instalación mediante Nix (NixOS)
 
-      En **Nix/NixOS**, Zotero también está disponible como paquete en `nixpkgs`. Las formas recomendadas son usar un shell temporal o declarar el paquete en la configuración:
+      En **Nix/NixOS**, Zotero está disponible como paquete en `nixpkgs`. Las formas recomendadas son usar un shell temporal o declarar el paquete en la configuración:
 
       ```bash
       # Uso temporal (recomendado para probar)
       nix-shell -p zotero
       ```
 
-      ```
+      ```nix
       # En NixOS, de forma declarativa (configuration.nix)
       environment.systemPackages = [
         pkgs.zotero
@@ -86,8 +89,8 @@ La instalación de la aplicación dependerá de tu sistema operativo. Accede a l
       # con flakes:
       nix profile add nixpkgs#zotero
       ```
-    </TabItem>
- </Tabs>
+  </TabItem>
+</Tabs>
 ---
 #### Extensión del navegador (Zotero Connector)
 

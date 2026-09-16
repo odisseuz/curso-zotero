@@ -46,22 +46,25 @@ The installation of the application will depend on your operating system. Access
       sudo apt install flatpak
   
       # 2. Add Flathub (the main Flatpak app repository)
-      flatpak remote-add --if-not-exists flathub [https://dl.flathub.org/repo/flathub.flatpakrepo](https://dl.flathub.org/repo/flathub.flatpakrepo)
+      flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
       
       # 3. Install Zotero
       flatpak install flathub org.zotero.Zotero
       ```
+  </TabItem>
+
+  <TabItem icon="linux" label="Linux (Nix/NixOS)">
 
       #### Installation via Nix (NixOS)
 
-      On **Nix/NixOS**, Zotero is also available as a package in `nixpkgs`. The recommended approaches are to use a temporary shell or declare the package in your configuration:
+      On **Nix/NixOS**, Zotero is available as a package in `nixpkgs`. The recommended approaches are to use a temporary shell or declare the package in your configuration:
 
       ```bash
       # Temporary use (recommended for trying it out)
       nix-shell -p zotero
       ```
 
-      ```
+      ```nix
       # On NixOS, declaratively (configuration.nix)
       environment.systemPackages = [
         pkgs.zotero
@@ -86,8 +89,8 @@ The installation of the application will depend on your operating system. Access
       # with flakes:
       nix profile add nixpkgs#zotero
       ```
-    </TabItem>
- </Tabs>
+  </TabItem>
+</Tabs>
 ---
 #### Browser Extension (Zotero Connector)
 
