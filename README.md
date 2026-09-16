@@ -1,20 +1,31 @@
-# Curso CIPET II: Zotero Reference Management Course
+# Curso CIPET II — Zotero Reference Management Course
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21515685.svg)](https://doi.org/10.5281/zenodo.21515685) 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21515685.svg)](https://doi.org/10.5281/zenodo.21515685)
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Content: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Code: MIT](https://img.shields.io/badge/code-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Open-source, multilingual documentation and crash course on reference management using **Zotero**. 
+**Leia em português:** [README.pt-BR.md](./README.pt-BR.md)
 
-**Live Course:** [odisseuz.github.io/curso-zotero](https://odisseuz.github.io/curso-zotero/)
+Open-source, multilingual mini-course on bibliographic reference management with **Zotero**, prepared for the II CIPET.
 
-## Features
-*   **Languages:** English, Spanish, and Portuguese.
-*   **Topics:** Installation, Item Insertion, Metadata, Tagging, and WebDAV Sync.
-*   **Tech Stack:** Astro & Starlight.
+**Live course:** <https://odisseuz.github.io/curso-zotero/>
 
-## Local Development
+## Course contents
+
+- **Module 1** — Introduction, concepts and planning; installation and configuration.
+- **Module 2** — Inserting items into Zotero; metadata, tags and folder organization.
+- **Module 3** — Integration with text editors and references.
+- **Extra** — Additional resources and acknowledgements.
+
+## Languages
+
+Portuguese is the default locale and is served at `/`. The other locales use path prefixes: `/es/` (Spanish) and `/en/` (English). Every page added under `src/content/docs/` needs a counterpart in the `es/` and `en/` folders to appear in those languages.
+
+## Local development
+
+Requires Node.js 22 or newer.
+
 ```bash
 git clone https://github.com/odisseuz/curso-zotero.git
 cd curso-zotero
@@ -22,36 +33,39 @@ npm install
 npm run dev
 ```
 
-## Languages
-English, Spanish and Portuguese
+Because `base` is set to `/curso-zotero` in `astro.config.mjs`, the dev server responds at <http://localhost:4321/curso-zotero/> — not at the bare `/`.
+
+To build and inspect the production output:
+
+```bash
+npm run build    # generates dist/
+npm run preview  # serves dist/ locally
+```
+
+### Nix environment (optional)
+
+The repository ships a `shell.nix` with Node.js 22, `gh`, `git` and the Zed editor. With Nix installed:
+
+```bash
+nix-shell
+```
+
+## Project structure
+
+```text
+astro.config.mjs       # Starlight config: locales, sidebar, site and base
+src/content/docs/      # Portuguese content (default locale, served at /)
+src/content/docs/es/   # Spanish content (served at /es/)
+src/content/docs/en/   # English content (served at /en/)
+src/assets/            # Images referenced by the pages
+public/                # Static files copied verbatim to the site root
+```
 
 ## Deploy
-Automatically executed by .github/workflows/deploy.yml after each push in main branch
+
+Handled automatically by `.github/workflows/deploy.yml` on every push to `main`, publishing to GitHub Pages via `withastro/action`.
 
 ## License
 
-Content and Image: CC-BY, Source-Code: MIT license
-
----
-# Minicurso: Gestão Bibliográfica com Zotero
-Material de apoio para o minicurso de introdução à gestão de referências bibliográficas com Zotero, que será apresentadono II CIPET.
-Acesso ao material: [odisseuz.github.io/curso-zotero]
-
-## Desenvolvimento Local
-
-```Bash
-git clone https://github.com/odisseuz/curso-zotero.git
-cd curso-zotero
-npm install
-npm run dev
-```
-
-
-## Idiomas
-O português é o idioma principal. As versões em espanhol e inglês usam os prefixos /es/ e /en/.
-
-## Deploy
-Executado automaticamente pelo .github/workflows/deploy.yml após cada push na branch main.
-
-## Licença
-Conteúdo: CC-BY 4.0. Código-fonte: Licença do template original.
+- **Content and images:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — see [LICENSE-CONTENT.md](./LICENSE-CONTENT.md).
+- **Source code:** [MIT](./LICENSE).
