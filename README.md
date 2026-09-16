@@ -1,6 +1,5 @@
 # Curso CIPET II — Zotero Reference Management Course
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21515685.svg)](https://doi.org/10.5281/zenodo.21515685)
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 [![Content: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
