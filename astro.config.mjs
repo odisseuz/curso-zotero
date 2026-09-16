@@ -9,7 +9,7 @@ export default defineConfig({
 
   integrations: [
     starlight({
-      title: "Curso CIPET II",
+      title: "Gestão Bibliográfica com Zotero",
 
       defaultLocale: 'root',
       locales: {
